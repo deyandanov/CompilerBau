@@ -2,7 +2,6 @@ package com.company.visitor.first;
 
 import com.company.base.*;
 
-import java.util.HashSet;
 import java.util.Set;
 
 public class VisitorFirst implements Visitor {
@@ -167,7 +166,7 @@ public class VisitorFirst implements Visitor {
 
     private void calculateLastPos(UnaryOpNode node) {
         for (int lastPos : node.getSubNode().getLastpos()) {
-            node.getFirstpos().add(lastPos);
+            node.getLastpos().add(lastPos);
         }
     }
 }

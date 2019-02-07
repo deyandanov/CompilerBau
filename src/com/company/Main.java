@@ -22,6 +22,8 @@ public class Main {
         Visitor visitorSecond = new VisitorSecond();
         visitorSecond.visit(visitable);
 
+
+
         SortedMap<Integer, FollowposTableEntry> map = ((VisitorSecond) visitorSecond).getFollowposTableEntries();
         for (int key : map.keySet()) {
             System.out.println(map.get(key).getFollowpos());
