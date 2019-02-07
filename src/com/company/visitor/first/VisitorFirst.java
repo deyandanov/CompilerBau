@@ -1,9 +1,9 @@
-package com.company.visitor1;
+package com.company.visitor.first;
 
 import com.company.base.*;
 
-public class Visitor1 implements Visitor {
-    public Visitor1() {
+public class VisitorFirst implements Visitor {
+    public VisitorFirst() {
 
     }
 
