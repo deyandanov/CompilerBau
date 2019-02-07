@@ -1,9 +1,9 @@
 package com.company.base;
 
 public class BinOpNode extends SyntaxNode implements Visitable {
-    public String operator;
-    public Visitable left;
-    public Visitable right;
+    private String operator;
+    private Visitable left;
+    private Visitable right;
 
     public BinOpNode(String operator, Visitable left, Visitable right) {
         this.operator = operator;
@@ -14,5 +14,29 @@ public class BinOpNode extends SyntaxNode implements Visitable {
     @Override
     public void accept(Visitor visitor) {
         visitor.visit(this);
+    }
+
+    public String getOperator() {
+        return operator;
+    }
+
+    public void setOperator(String operator) {
+        this.operator = operator;
+    }
+
+    public Visitable getLeft() {
+        return left;
+    }
+
+    public void setLeft(Visitable left) {
+        this.left = left;
+    }
+
+    public Visitable getRight() {
+        return right;
+    }
+
+    public void setRight(Visitable right) {
+        this.right = right;
     }
 }

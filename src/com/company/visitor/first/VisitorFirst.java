@@ -9,7 +9,6 @@ public class VisitorFirst implements Visitor {
 
     @Override
     public void visit(OperandNode node) {
-
     }
 
     @Override
