@@ -6,4 +6,6 @@ public interface Visitor {
     void visit(BinOpNode node);
 
     void visit(UnaryOpNode node);
+
+    void visit(Visitable visitable);
 }
