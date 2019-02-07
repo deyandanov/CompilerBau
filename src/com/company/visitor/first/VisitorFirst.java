@@ -6,8 +6,10 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class VisitorFirst implements Visitor {
-    public VisitorFirst() {
+    private int position;
 
+    public VisitorFirst() {
+        position = 1;
     }
 
     //TODO: HAT HIER NICHTS VERLOREN, IN ANDERE KLASSE
@@ -29,6 +31,7 @@ public class VisitorFirst implements Visitor {
 
     @Override
     public void visit(OperandNode node) {
+        node.setPosition(position++);
         checkNullable(node);
         calculateFirstPos(node);
         calculateLastPos(node);
@@ -60,7 +63,7 @@ public class VisitorFirst implements Visitor {
 
     //Nullable fuer alle Knoten berechnen//
 
-    public void checkNullable(OperandNode node) {
+    private void checkNullable(OperandNode node) {
         if (node.getSymbol().equals("ε")) {
             node.setNullable(true);
         } else {
@@ -68,12 +71,12 @@ public class VisitorFirst implements Visitor {
         }
     }
 
-    public void checkNullable(BinOpNode node) {
+    private void checkNullable(BinOpNode node) {
         Visitable leftNode = node.getLeft();
-        boolean isNullableLeft = isNullable(leftNode);
+        boolean isNullableLeft = leftNode.isNullable();
 
         Visitable rightNode = node.getRight();
-        boolean isNullableRight = isNullable(rightNode);
+        boolean isNullableRight = rightNode.isNullable();
 
         String operator = node.getOperator();
         if (operator.equals("|")) {
@@ -83,71 +86,88 @@ public class VisitorFirst implements Visitor {
         }
     }
 
-    public void checkNullable(UnaryOpNode node) {
+    private void checkNullable(UnaryOpNode node) {
         String operator = node.getOperator();
         if (operator.equals("*")) {
             node.setNullable(true);
-        }else if(operator.equals("+")) {
-            node.setNullable(isNullable(node.getSubNode()));
-        }else if (operator.equals("?")) {
+        } else if (operator.equals("+")) {
+            node.setNullable(node.getSubNode().isNullable());
+        } else if (operator.equals("?")) {
             node.setNullable(true);
-        }else {
-            System.err.println("This type of operator is not supported!");
+        } else {
+            System.err.println("This type of operator is not supported!4" + node.getOperator());
         }
     }
 
     //Firstpos fuer alle Knoten berechnen//
 
-    public void calculateFirstPos(OperandNode node) {
+    private void calculateFirstPos(OperandNode node) {
         if (node.getSymbol().equals("ε")) {
         } else {
             node.getFirstpos().add(node.getPosition());
         }
     }
 
-    public void calculateFirstPos(BinOpNode node) {
+    private void calculateFirstPos(BinOpNode node) {
+        Set<Integer> firstPosLeftSet = node.getLeft().getFirstpos();
+        Set<Integer> firstPosRightSet = node.getRight().getFirstpos();
+
         String operator = node.getOperator();
-        if (operator.equals("|")) {
-
-        } else if (operator.equals("°")) {
-
+        if (operator.equals("|") || (operator.equals("°") && node.getLeft().isNullable())) {
+            for (int firstPosLeft : firstPosLeftSet) {
+                node.getFirstpos().add(firstPosLeft);
+            }
+            for (int firstPosRight : firstPosRightSet) {
+                node.getFirstpos().add(firstPosRight);
+            }
+        } else if (operator.equals("°") && !node.getLeft().isNullable()) {
+            for (int firstPosLeft : firstPosLeftSet) {
+                node.getFirstpos().add(firstPosLeft);
+            }
+        } else {
+            System.err.println("This type of operator is not supported!2" + node.getOperator());
         }
     }
 
-    public void calculateFirstPos(UnaryOpNode node) {
-
+    private void calculateFirstPos(UnaryOpNode node) {
+        for (int firstPos : node.getSubNode().getFirstpos()) {
+            node.getFirstpos().add(firstPos);
+        }
     }
 
     //Firstpos fuer alle Knoten berechnen//
 
-    public void calculateLastPos(OperandNode node) {
-    }
-
-    public void calculateLastPos(BinOpNode node) {
-
-    }
-
-    public void calculateLastPos(UnaryOpNode node) {
-
-    }
-
-    //Hilfsmethoden//
-    private boolean isNullable(Visitable visitable) {
-        boolean isNullable;
-
-        if (visitable instanceof OperandNode) {
-            OperandNode operandNode = (OperandNode) visitable;
-            isNullable = operandNode.isNullable();
-        } else if (visitable instanceof BinOpNode) {
-            BinOpNode binOpNode = (BinOpNode) visitable;
-            isNullable = binOpNode.isNullable();
-        } else if (visitable instanceof UnaryOpNode) {
-            UnaryOpNode unaryNode = (UnaryOpNode) visitable;
-            isNullable = unaryNode.isNullable();
+    private void calculateLastPos(OperandNode node) {
+        if (node.getSymbol().equals("ε")) {
         } else {
-            System.err.println("This type of node is not supported!");
-            isNullable = false;
+            node.getLastpos().add(node.getPosition());
         }
-        return isNullable;
+    }
+
+    private void calculateLastPos(BinOpNode node) {
+        Set<Integer> lastPosLeftSet = node.getLeft().getLastpos();
+        Set<Integer> lastPosRightSet = node.getRight().getLastpos();
+
+        String operator = node.getOperator();
+        if (operator.equals("|") || (operator.equals("°") && node.getRight().isNullable())) {
+            for (int lastPosLeft : lastPosLeftSet) {
+                node.getLastpos().add(lastPosLeft);
+            }
+            for (int lastPosRight : lastPosRightSet) {
+                node.getLastpos().add(lastPosRight);
+            }
+        } else if (operator.equals("°") && !node.getRight().isNullable()) {
+            for (int lastPosRight : lastPosRightSet) {
+                node.getLastpos().add(lastPosRight);
+            }
+        } else {
+            System.err.println("This type of operator is not supported!1" + node.getOperator());
+        }
+    }
+
+    private void calculateLastPos(UnaryOpNode node) {
+        for (int lastPos : node.getSubNode().getLastpos()) {
+            node.getFirstpos().add(lastPos);
+        }
     }
 }
