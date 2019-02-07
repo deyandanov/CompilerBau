@@ -3,40 +3,75 @@ package com.company.visitor.second;
 import com.company.base.*;
 
 import java.time.Instant;
+import java.util.HashSet;
 import java.util.Set;
+import java.util.SortedMap;
+import java.util.TreeMap;
 
 public class VisitorSecond implements Visitor {
 
-    @Override
-    public void visit(OperandNode node) {
-        //nothing to do here
+
+    private SortedMap<Integer, FollowposTableEntry> followposTableEntries;
+
+    public VisitorSecond() {
+        followposTableEntries = new TreeMap<>();
 
     }
+
+    private int sumNodes(Visitable node){
+        if (node instanceof OperandNode){
+            return ((OperandNode) node).getPosition();
+        }
+        else if(node instanceof UnaryOpNode){
+            sumNodes(((UnaryOpNode)node).getSubNode());
+        }
+        else{sumNodes(((BinOpNode)node).getRight());}
+
+
+
+    }
+
+    @Override
+    public void visit(OperandNode node) {
+        //sets rows in table
+    }
+
 
     @Override
     public void visit(BinOpNode node) {
         visit(node.getLeft());
         visit(node.getRight());
-
-        //implements followpos for concats
-
-        if (node.getOperator() == "°") {
-            for (int lastposindex: returnLastPosSet(node.getLeft())){
-                
+        if (node.getOperator().equals("°")) {
+            for (int lastposindex : node.getLeft().getLastpos()) {
+                for (int firstPos2 : node.getRight().getFirstpos()) {
+                    followposTableEntries.get(lastposindex).getFollowpos().add(firstPos2);
+                }
             }
         }
-
     }
+
 
     @Override
     public void visit(UnaryOpNode node) {
-        visit(node.getSubNode());
-        //nothing to do here
+       if (node.getOperator().equals("*")||node.getOperator().equals("+")){
+           for (int lastposindex:node.getLastpos()){
+              for(int firstpos:node.getFirstpos()){
+                  followposTableEntries.get(lastposindex).getFollowpos().add((firstpos));
+              }
+           }
+       }
 
     }
 
     @Override
     public void visit(Visitable visitable) {
+
+        followposTableEntries = new TreeMap<>();
+
+        for (int i=1; i<= sumNodes(visitable);i++){
+            followposTableEntries.put(i,new FollowposTableEntry(i,null));
+        }
+
         if (visitable instanceof OperandNode) {
             OperandNode operandNode = (OperandNode) visitable;
             operandNode.accept(this);
@@ -61,19 +96,4 @@ public class VisitorSecond implements Visitor {
 
 
     }
-
-    public Set<Integer> returnLastPosSet(Visitable node) {
-        if (node instanceof OperandNode) {
-            return ((OperandNode) node).getLastpos();
-        }
-        else if (node instanceof BinOpNode) {
-            return ((BinOpNode) node).getLastpos();
-        }
-
-        else     if (node instanceof UnaryOpNode){
-            return ((UnaryOpNode) node).getLastpos();
-
-
-    }
-
 }

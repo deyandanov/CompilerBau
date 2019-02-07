@@ -9,7 +9,6 @@ public class FollowposTableEntry {
     private final Set<Integer> followpos = new HashSet<>();
 
 
-    TableTreeMap tableTreeMap=new TableTreeMap();
 
 
     public int getPosition() {
