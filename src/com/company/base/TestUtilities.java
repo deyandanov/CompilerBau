@@ -34,6 +34,7 @@ public static Visitable createTestTree(){
 
     BinOpNode binOpNode_concat4=new BinOpNode("°",binOpNode_concat3,operandNode_endtag);
 
+    return binOpNode_concat4;
 
 
 }
