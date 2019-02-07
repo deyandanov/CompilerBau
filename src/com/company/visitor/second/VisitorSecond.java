@@ -10,6 +10,10 @@ public class VisitorSecond implements Visitor {
 
     private SortedMap<Integer, FollowposTableEntry> followposTableEntries;
 
+    public VisitorSecond() {
+        followposTableEntries = new TreeMap<>();
+    }
+
     private int sumNodes(Visitable node) {
         if (node instanceof OperandNode) {
             return ((OperandNode) node).getPosition();
@@ -22,7 +26,7 @@ public class VisitorSecond implements Visitor {
 
     @Override
     public void visit(OperandNode node) {
-        System.out.println("Bin bei OperandNode: " + node.getSymbol());
+        followposTableEntries.put(node.getPosition(), new FollowposTableEntry(node.getPosition(), node.getSymbol()));
     }
 
 
@@ -42,10 +46,14 @@ public class VisitorSecond implements Visitor {
 
     @Override
     public void visit(UnaryOpNode node) {
+        visit(node.getSubNode());
         if (node.getOperator().equals("*") || node.getOperator().equals("+")) {
             for (int lastposindex : node.getLastpos()) {
                 for (int firstpos : node.getFirstpos()) {
-                    followposTableEntries.get(lastposindex).getFollowpos().add((firstpos));
+                    System.out.println("Now Adding " + lastposindex + " advalue " + firstpos);
+                    followposTableEntries.get(lastposindex).getFollowpos().add(firstpos);
+
+                    System.out.println(lastposindex + " added" + firstpos);
                 }
             }
         }
@@ -54,13 +62,6 @@ public class VisitorSecond implements Visitor {
 
     @Override
     public void visit(Visitable visitable) {
-
-        followposTableEntries = new TreeMap<>();
-
-        for (int i = 1; i <= sumNodes(visitable); i++) {
-            followposTableEntries.put(i, new FollowposTableEntry(i, null));
-        }
-
         if (visitable instanceof OperandNode) {
             OperandNode operandNode = (OperandNode) visitable;
             operandNode.accept(this);
