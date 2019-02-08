@@ -5,13 +5,14 @@ import com.company.base.*;
 import java.util.Set;
 
 public class VisitorFirst implements Visitor {
+    //Teil von Noah Börger
+
     private int position;
 
     public VisitorFirst() {
         position = 1;
     }
 
-    //TODO: HAT HIER NICHTS VERLOREN, IN ANDERE KLASSE
     @Override
     public void visit(Visitable visitable) {
         if (visitable instanceof OperandNode) {
@@ -31,6 +32,7 @@ public class VisitorFirst implements Visitor {
     @Override
     public void visit(OperandNode node) {
         node.setPosition(position++);
+
         checkNullable(node);
         calculateFirstPos(node);
         calculateLastPos(node);
@@ -41,7 +43,6 @@ public class VisitorFirst implements Visitor {
         if (node.getLeft() != null) {
             visit(node.getLeft());
         }
-
         if (node.getRight() != null) {
             visit(node.getRight());
         }
@@ -53,7 +54,9 @@ public class VisitorFirst implements Visitor {
 
     @Override
     public void visit(UnaryOpNode node) {
-        visit(node.getSubNode());
+        if (node.getSubNode() != null) {
+            visit(node.getSubNode());
+        }
 
         checkNullable(node);
         calculateFirstPos(node);
@@ -63,7 +66,7 @@ public class VisitorFirst implements Visitor {
     //Nullable fuer alle Knoten berechnen//
 
     private void checkNullable(OperandNode node) {
-        if (node.getSymbol().equals("ε")) {
+        if ("ε".equals(node.getSymbol())) {
             node.setNullable(true);
         } else {
             node.setNullable(false);
@@ -78,31 +81,35 @@ public class VisitorFirst implements Visitor {
         boolean isNullableRight = rightNode.isNullable();
 
         String operator = node.getOperator();
-        if (operator.equals("|")) {
+        if ("|".equals(operator)) {
             node.setNullable(isNullableLeft || isNullableRight);
-        } else if (operator.equals("°")) {
+        } else if ("°".equals(operator)) {
             node.setNullable(isNullableLeft && isNullableRight);
         }
     }
 
     private void checkNullable(UnaryOpNode node) {
         String operator = node.getOperator();
-        if (operator.equals("*")) {
-            node.setNullable(true);
-        } else if (operator.equals("+")) {
-            node.setNullable(node.getSubNode().isNullable());
-        } else if (operator.equals("?")) {
-            node.setNullable(true);
-        } else {
-            System.err.println("This type of operator is not supported!4" + node.getOperator());
+        switch (operator) {
+            case "*":
+                node.setNullable(true);
+                break;
+            case "+":
+                node.setNullable(node.getSubNode().isNullable());
+                break;
+            case "?":
+                node.setNullable(true);
+                break;
+            default:
+                System.err.println("This type of operator is not supported!");
+                break;
         }
     }
 
-    //Firstpos fuer alle Knoten berechnen//
+    //FirstPos fuer alle Knoten berechnen//
 
     private void calculateFirstPos(OperandNode node) {
-        if (node.getSymbol().equals("ε")) {
-        } else {
+        if (!"ε".equals(node.getSymbol())) {
             node.getFirstpos().add(node.getPosition());
         }
     }
@@ -112,19 +119,19 @@ public class VisitorFirst implements Visitor {
         Set<Integer> firstPosRightSet = node.getRight().getFirstpos();
 
         String operator = node.getOperator();
-        if (operator.equals("|") || (operator.equals("°") && node.getLeft().isNullable())) {
+        if ("|".equals(operator) || ("°".equals(operator) && node.getLeft().isNullable())) {
             for (int firstPosLeft : firstPosLeftSet) {
                 node.getFirstpos().add(firstPosLeft);
             }
             for (int firstPosRight : firstPosRightSet) {
                 node.getFirstpos().add(firstPosRight);
             }
-        } else if (operator.equals("°") && !node.getLeft().isNullable()) {
+        } else if ("°".equals(operator) && !node.getLeft().isNullable()) {
             for (int firstPosLeft : firstPosLeftSet) {
                 node.getFirstpos().add(firstPosLeft);
             }
         } else {
-            System.err.println("This type of operator is not supported!2" + node.getOperator());
+            System.err.println("This type of operator is not supported!");
         }
     }
 
@@ -134,11 +141,10 @@ public class VisitorFirst implements Visitor {
         }
     }
 
-    //Firstpos fuer alle Knoten berechnen//
+    //LastPos fuer alle Knoten berechnen//
 
     private void calculateLastPos(OperandNode node) {
-        if (node.getSymbol().equals("ε")) {
-        } else {
+        if (!"ε".equals(node.getSymbol())) {
             node.getLastpos().add(node.getPosition());
         }
     }
@@ -148,19 +154,19 @@ public class VisitorFirst implements Visitor {
         Set<Integer> lastPosRightSet = node.getRight().getLastpos();
 
         String operator = node.getOperator();
-        if (operator.equals("|") || (operator.equals("°") && node.getRight().isNullable())) {
+        if ("|".equals(operator) || ("°".equals(operator) && node.getRight().isNullable())) {
             for (int lastPosLeft : lastPosLeftSet) {
                 node.getLastpos().add(lastPosLeft);
             }
             for (int lastPosRight : lastPosRightSet) {
                 node.getLastpos().add(lastPosRight);
             }
-        } else if (operator.equals("°") && !node.getRight().isNullable()) {
+        } else if ("°".equals(operator) && !node.getRight().isNullable()) {
             for (int lastPosRight : lastPosRightSet) {
                 node.getLastpos().add(lastPosRight);
             }
         } else {
-            System.err.println("This type of operator is not supported!1" + node.getOperator());
+            System.err.println("This type of operator is not supported!");
         }
     }
 
