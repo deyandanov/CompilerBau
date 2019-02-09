@@ -15,6 +15,7 @@ public class VisitorFirst implements Visitor {
 
     @Override
     public void visit(Visitable visitable) {
+        //Methode eingefügt, um nachfolgende Visitable die die Knoten liefern nicht immer nochmal in den Methoden vor dem Besuchen casten zu müssen
         if (visitable instanceof OperandNode) {
             OperandNode operandNode = (OperandNode) visitable;
             operandNode.accept(this);
