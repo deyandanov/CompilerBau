@@ -1,4 +1,4 @@
-package com.company;
+package com.company.base;
 
 import java.util.Set;
 
