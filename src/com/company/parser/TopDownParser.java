@@ -12,7 +12,8 @@ public class TopDownParser implements ITopDownParser {
 
     @Override
     public Visitable parse (String regEx) throws Exception {
-        return null;
+        this.regEx = regEx;
+        return start();
     }
 
     private Visitable start () {
