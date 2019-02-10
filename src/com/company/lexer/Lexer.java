@@ -1,4 +1,6 @@
-package com.company;
+package com.company.lexer;
+
+import com.company.base.DFAState;
 
 import java.util.Map;
 import java.util.SortedMap;

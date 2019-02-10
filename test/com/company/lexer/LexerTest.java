@@ -1,11 +1,10 @@
-package com.company;
+package com.company.lexer;
 
+import com.company.base.DFAState;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.*;
-
-import static org.junit.Assert.*;
 
 public class LexerTest {
 
