@@ -17,16 +17,7 @@ public class VisitorSecond implements Visitor {
         followposTableEntries = new TreeMap<>();
     }
 
-    private int sumNodes(Visitable node) {
-        if (node instanceof OperandNode) {
-            return ((OperandNode) node).getPosition();
-        } else if (node instanceof UnaryOpNode) {
-            return sumNodes(((UnaryOpNode) node).getSubNode());
-        } else {
-            return sumNodes(((BinOpNode) node).getRight());
-        }
-    }
-
+  
     @Override
     public void visit(OperandNode node) {
         followposTableEntries.put(node.getPosition(), new FollowposTableEntry(node.getPosition(), node.getSymbol()));
