@@ -1,6 +1,8 @@
 package com.company.visitor.first;
 
 import com.company.base.*;
+import com.company.base.syntaxtree.BinOpNode;
+import com.company.base.syntaxtree.UnaryOpNode;
 import org.junit.Assert;
 import org.junit.Test;
 

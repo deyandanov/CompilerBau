@@ -1,4 +1,8 @@
-package com.company.base;
+package com.company.base.syntaxtree;
+
+import com.company.base.Visitable;
+import com.company.base.Visitor;
+import com.company.base.syntaxtree.SyntaxNode;
 
 public class BinOpNode extends SyntaxNode implements Visitable {
     private String operator;

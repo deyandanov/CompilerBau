@@ -1,6 +1,9 @@
 package com.company.visitor.first;
 
 import com.company.base.*;
+import com.company.base.syntaxtree.BinOpNode;
+import com.company.base.syntaxtree.OperandNode;
+import com.company.base.syntaxtree.UnaryOpNode;
 
 import java.util.Set;
 
