@@ -2,6 +2,7 @@ package com.company.parser;
 
 import com.company.base.BinOpNode;
 import com.company.base.OperandNode;
+import com.company.base.UnaryOpNode;
 import com.company.base.Visitable;
 
 
@@ -87,25 +88,44 @@ public class TopDownParser implements ITopDownParser {
         char c = regEx.charAt(pos);
 
         if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' ||c >= 'a' && c <= 'z' || c == '(' || c == '|' || c == ')') {
-            //epsion
+            //epsilon
+            return hop(p, pos + 1);
         }
         else if (c == '*') {
             //sternchen
+            return (new UnaryOpNode("*", p));
         }
         else if (c == '+') {
             //plus
+            return new UnaryOpNode("+", p);
         }
         else if (c == '?') {
             //?
+            return new UnaryOpNode("?", p);
         }
         return null;
     }
 
     private Visitable elem (Visitable p, int pos) {
+        char c = regEx.charAt(pos);
+
+        if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' ||c >= 'a' && c <= 'z') {
+            //alphanum
+            return alphanum(null, pos + 1);
+        }
+        else if (c == '(') {
+            //klammer regexp klammer
+            regExp(null, pos + 1);
+        }
         return null;
     }
 
     private Visitable alphanum (Visitable p, int pos) {
+        char c = regEx.charAt(pos);
+
+        if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' ||c >= 'a' && c <= 'z') {
+            return new OperandNode("A");
+        }
         return null;
     }
 
