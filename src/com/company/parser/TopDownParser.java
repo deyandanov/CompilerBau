@@ -1,12 +1,12 @@
 package com.company.parser;
 
-import com.company.base.syntaxtree.BinOpNode;
-import com.company.base.syntaxtree.OperandNode;
-import com.company.base.syntaxtree.UnaryOpNode;
+import com.company.base.BinOpNode;
+import com.company.base.OperandNode;
+import com.company.base.UnaryOpNode;
 import com.company.base.Visitable;
 
 
-public class TopDownParser {
+public class TopDownParser implements ITopDownParser {
 
     // Attributes
     private String regex;
@@ -145,5 +145,10 @@ public class TopDownParser {
 
             return new OperandNode(regex.charAt(pos) + "");
         } else return null;
+    }
+
+    @Override
+    public Visitable parse(String regEx) throws Exception {
+        return null;
     }
 }

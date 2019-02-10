@@ -1,4 +1,4 @@
-package com.company.base.syntaxtree;
+package com.company.base;
 
 import java.util.HashSet;
 import java.util.Set;

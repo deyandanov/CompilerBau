@@ -1,8 +1,9 @@
 package com.company;
 
-import com.company.base.TestUtilities;
+import com.company.base.testres.TestUtilities;
 import com.company.base.Visitable;
 import com.company.base.Visitor;
+import com.company.parser.TopDownParser;
 import com.company.visitor.first.VisitorFirst;
 import com.company.visitor.second.FollowposTableEntry;
 import com.company.visitor.second.VisitorSecond;
@@ -28,5 +29,7 @@ public class Main {
         for (int key : map.keySet()) {
             System.out.println(map.get(key).getFollowpos());
         }
+
+        TopDownParser topDownParser = new TopDownParser("");
     }
 }

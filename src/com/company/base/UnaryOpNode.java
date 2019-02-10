@@ -1,8 +1,4 @@
-package com.company.base.syntaxtree;
-
-import com.company.base.Visitable;
-import com.company.base.Visitor;
-import com.company.base.syntaxtree.SyntaxNode;
+package com.company.base;
 
 public class UnaryOpNode extends SyntaxNode implements Visitable {
     private String operator;
