@@ -30,6 +30,13 @@ public class Main {
             System.out.println(map.get(key).getFollowpos());
         }
 
-        TopDownParser topDownParser = new TopDownParser("");
+        TopDownParser topDownParser = new TopDownParser();
+
+        try {
+            Visitable testtree =  topDownParser.parse("(a+b)#");
+            System.out.println("E");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
