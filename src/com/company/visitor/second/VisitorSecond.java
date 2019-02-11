@@ -52,7 +52,7 @@ public class VisitorSecond implements Visitor {
 
     }
 
-    //no need to implement OperandOpNode, cause in trees with child those were visited and  followpos will be calcualted
+    //no need to implement OperandOpNode, cause in trees with child those were visited and  followpos will be calculated
 
     @Override
     public void visit(Visitable visitable) {        // calls methods by type of node
