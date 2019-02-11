@@ -72,6 +72,7 @@ public class TopDownParser implements ITopDownParser {
             return re(root);
         } else if (regEx.charAt(pos) == ')') {
             //epsilon
+            pos++;
             return p;
         }
 
@@ -119,6 +120,7 @@ public class TopDownParser implements ITopDownParser {
             return alphanum(null);
         } else if (c == '(') {
             //klammer regexp klammer
+            pos++;
             return regExp(null);
         }
         return null;

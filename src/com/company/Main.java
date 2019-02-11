@@ -22,9 +22,12 @@ public class Main {
         Visitable tree = null;
 
         Scanner scanner = new Scanner(System.in);
-        //String regEx = scanner.next();
 
-        tree = parser.parse("(a|b)*a#");
+        System.out.println("Geben Sie ihren regulären Ausdruck in der Form (RA)# ein:");
+
+        String regEx = scanner.next();
+
+        tree = parser.parse(regEx);
 
         if(tree == null) {
             System.out.println("Ihr Ausdruck konnte nicht geparst werden!");
