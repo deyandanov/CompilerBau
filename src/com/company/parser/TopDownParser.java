@@ -69,7 +69,7 @@ public class TopDownParser implements ITopDownParser {
             return re(root, pos + 1);
         } else if (regEx.charAt(pos) == ')') {
             //epsilon
-            return re(p, pos + 1);
+            return p;
         }
 
         return null;
