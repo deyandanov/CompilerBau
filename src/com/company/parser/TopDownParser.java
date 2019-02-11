@@ -8,147 +8,118 @@ import com.company.base.Visitable;
 
 public class TopDownParser implements ITopDownParser {
 
-    // Attributes
-    private String regex;
-    private Visitable syntaxTreeRoot;
-
-    // Constructor
-    public TopDownParser(String regex) {
-        this.regex = regex;
-    }
-
-    // Getter methods
-    public String getRegex() {
-        return regex;
-    }
-
-    // Setter methods
-    public void setRegex(String regex) {
-        this.regex = regex;
-    }
-
-    public Visitable getSyntaxTreeRoot() {
-        return syntaxTreeRoot;
-    }
-
-    public void setSyntaxTreeRoot(Visitable syntaxTreeRoot) {
-        this.syntaxTreeRoot = syntaxTreeRoot;
-    }
-
-    // logic
-    private Visitable start() {
-
-        if (regex.charAt(0) == '#') {
-            return new OperandNode("#");
-        }
-        else if (regex.charAt(0) == '(') {
-            OperandNode leaf = new OperandNode("#");
-            return new BinOpNode("°", regExp(null, 1), leaf);
-        }
-        else {
-            return null;
-        }
-    }
-
-    private Visitable regExp(Visitable parent, int pos) {
-
-        int charAtPosASCII = (int) regex.charAt(pos);
-
-        // 0 ... 9 | a ... z | A ... Z | (
-        if ((charAtPosASCII >= 48 && charAtPosASCII <= 57) || (charAtPosASCII >= 65 && charAtPosASCII <= 90) ||
-                (charAtPosASCII >= 97 && charAtPosASCII <= 122) || regex.charAt(pos) == '(') {
-            return reApostrophe(term(null, pos + 1), pos + 1);
-        } else return null;
-    }
-
-    private Visitable reApostrophe(Visitable parent, int pos) {
-
-        if (regex.charAt(pos) == '|') {
-
-            BinOpNode root = new BinOpNode("|", parent, term(null, pos + 1));
-
-            return reApostrophe(root, pos + 1);
-        } else if (regex.charAt(pos) == ')') return parent;
-
-        else return null;
-    }
-
-    private Visitable term(Visitable parent, int pos) {
-
-        int charAtPosASCII = (int) regex.charAt(pos);
-
-        // 0 ... 9 | a ... z | A ... Z | (
-        if ((charAtPosASCII >= 48 && charAtPosASCII <= 57) || (charAtPosASCII >= 65 && charAtPosASCII <= 90) ||
-                (charAtPosASCII >= 97 && charAtPosASCII <= 122) || regex.charAt(pos) == '(') {
-
-            if (parent != null) {
-
-                BinOpNode root = new BinOpNode("°", parent, factor(null, pos + 1));
-
-                return term(root, pos + 1);
-            } else return term(factor(null, pos + 1), pos + 1);
-        } else if (regex.charAt(pos) == ')' || regex.charAt(pos) == '|') return parent;
-
-        else return null;
-    }
-
-    private Visitable factor(Visitable parent, int pos) {
-
-        int charAtPosASCII = (int) regex.charAt(pos);
-
-        // 0 ... 9 | a ... z | A ... Z | (
-        if ((charAtPosASCII >= 48 && charAtPosASCII <= 57) || (charAtPosASCII >= 65 && charAtPosASCII <= 90) ||
-                (charAtPosASCII >= 97 && charAtPosASCII <= 122) || regex.charAt(pos) == '(') {
-
-            return hOp(elem(null, pos + 1), pos + 1);
-        } else return null;
-    }
-
-    private Visitable hOp(Visitable parent, int pos) {
-
-        int charAtPosASCII = (int) regex.charAt(pos);
-
-        // 0 ... 9 | a ... z | A ... Z | '(' | '|'
-        if ((charAtPosASCII >= 48 && charAtPosASCII <= 57) || (charAtPosASCII >= 65 && charAtPosASCII <= 90) ||
-                (charAtPosASCII >= 97 && charAtPosASCII <= 122) || regex.charAt(pos) == '(' ||
-                regex.charAt(pos) == '|') {
-
-            return parent;
-        } else if (regex.charAt(pos) == '*') return new UnaryOpNode("*", parent);
-        else if (regex.charAt(pos) == '+') return new UnaryOpNode("+", parent);
-        else if (regex.charAt(pos) == '?') return new UnaryOpNode("?", parent);
-
-        else return null;
-    }
-
-    private Visitable elem(Visitable parent, int pos) {
-
-        int charAtPosASCII = (int) regex.charAt(pos);
-
-        // 0 ... 9 | a ... z | A ... Z
-        if ((charAtPosASCII >= 48 && charAtPosASCII <= 57) || (charAtPosASCII >= 65 && charAtPosASCII <= 90) ||
-                (charAtPosASCII >= 97 && charAtPosASCII <= 122)) {
-
-            return alphaNum(null, pos + 1);
-        } else if (regex.charAt(pos) == '(') return regExp(null, pos + 1);
-
-        else return null;
-    }
-
-    private Visitable alphaNum(Visitable parent, int pos) {
-
-        int charAtPosASCII = (int) regex.charAt(pos);
-
-        // 0 ... 9 | a ... z | A ... Z | (
-        if ((charAtPosASCII >= 48 && charAtPosASCII <= 57) || (charAtPosASCII >= 65 && charAtPosASCII <= 90) ||
-                (charAtPosASCII >= 97 && charAtPosASCII <= 122)) {
-
-            return new OperandNode(regex.charAt(pos) + "");
-        } else return null;
-    }
+    private String regEx;
 
     @Override
-    public Visitable parse(String regEx) throws Exception {
+    public Visitable parse(String regEx) {
+        this.regEx = regEx;
+        return start();
+    }
+
+    private Visitable start() {
+        if (regEx.charAt(0) == '#') {
+            return new OperandNode("#");
+        } else if (regEx.charAt(0) == '(') {
+            OperandNode leaf = new OperandNode("#");
+            BinOpNode root = new BinOpNode("°", regExp(null, 1), leaf);
+            return root;
+        }
         return null;
     }
+
+    private Visitable regExp(Visitable p, int pos) {
+        char c = regEx.charAt(pos);
+
+        if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z' || c == '(') {
+            return (re(term(null, pos + 1), pos + 1));
+        }
+
+        return null;
+    }
+
+    private Visitable term(Visitable p, int pos) {
+        char c = regEx.charAt(pos);
+
+        if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z' || c == '(') {
+            Visitable term1Parameter = null;
+            if (p != null) {
+                //factor term
+                BinOpNode root = new BinOpNode("°", p, factor(null, pos + 1));
+                term1Parameter = root;
+            } else {
+                term1Parameter = factor(null, pos + 1);
+            }
+            return term(term1Parameter, pos + 1);
+        } else if (c == '|' || c == ')') {
+            //epsilon
+            return term(p, pos + 1);
+        }
+
+        return null;
+    }
+
+    private Visitable re(Visitable p, int pos) {
+
+        if (regEx.charAt(pos) == '|') {
+            BinOpNode root = new BinOpNode("|", p, term(null, pos + 1));
+            return re(root, pos + 1);
+        } else if (regEx.charAt(pos) == ')') {
+            return re(p, pos + 1);
+        }
+
+        return null;
+    }
+
+    private Visitable factor(Visitable p, int pos) {
+        char c = regEx.charAt(pos);
+
+        if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z' || c == '(') {
+            //elem hop
+            return hop(elem(null, pos + 1), pos + 1);
+        }
+
+        return null;
+    }
+
+    private Visitable hop(Visitable p, int pos) {
+        char c = regEx.charAt(pos);
+
+        if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z' || c == '(' || c == '|' || c == ')') {
+            //epsilon
+            return hop(p, pos + 1);
+        } else if (c == '*') {
+            //sternchen
+            return (new UnaryOpNode("*", p));
+        } else if (c == '+') {
+            //plus
+            return new UnaryOpNode("+", p);
+        } else if (c == '?') {
+            //?
+            return new UnaryOpNode("?", p);
+        }
+        return null;
+    }
+
+    private Visitable elem(Visitable p, int pos) {
+        char c = regEx.charAt(pos);
+
+        if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z') {
+            //alphanum
+            return alphanum(null, pos + 1);
+        } else if (c == '(') {
+            //klammer regexp klammer
+            regExp(null, pos + 1);
+        }
+        return null;
+    }
+
+    private Visitable alphanum(Visitable p, int pos) {
+        char c = regEx.charAt(pos);
+
+        if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z') {
+            return new OperandNode("A");
+        }
+        return null;
+    }
+
 }
