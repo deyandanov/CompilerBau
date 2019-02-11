@@ -23,7 +23,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Geben Sie ihren regulären Ausdruck in der Form (RA)# ein:");
+        System.out.println("Geben Sie ihren regulären Ausdruck in der Form (r)# ein:");
 
         String regEx = scanner.next();
 
