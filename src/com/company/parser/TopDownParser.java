@@ -18,8 +18,10 @@ public class TopDownParser implements ITopDownParser {
 
     private Visitable start() {
         if (regEx.charAt(0) == '#') {
+            //#
             return new OperandNode("#");
         } else if (regEx.charAt(0) == '(') {
+            //(regexp)#
             OperandNode leaf = new OperandNode("#");
             BinOpNode root = new BinOpNode("°", regExp(null, 1), leaf);
             return root;
@@ -31,6 +33,7 @@ public class TopDownParser implements ITopDownParser {
         char c = regEx.charAt(pos);
 
         if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z' || c == '(') {
+            //termRE
             return (re(term(null, pos + 1), pos + 1));
         }
 
@@ -41,9 +44,9 @@ public class TopDownParser implements ITopDownParser {
         char c = regEx.charAt(pos);
 
         if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z' || c == '(') {
+            //factor term
             Visitable term1Parameter = null;
             if (p != null) {
-                //factor term
                 BinOpNode root = new BinOpNode("°", p, factor(null, pos + 1));
                 term1Parameter = root;
             } else {
@@ -52,7 +55,7 @@ public class TopDownParser implements ITopDownParser {
             return term(term1Parameter, pos + 1);
         } else if (c == '|' || c == ')') {
             //epsilon
-            return term(p, pos + 1);
+            return p;
         }
 
         return null;
@@ -61,9 +64,11 @@ public class TopDownParser implements ITopDownParser {
     private Visitable re(Visitable p, int pos) {
 
         if (regEx.charAt(pos) == '|') {
+            //|termRE
             BinOpNode root = new BinOpNode("|", p, term(null, pos + 1));
             return re(root, pos + 1);
         } else if (regEx.charAt(pos) == ')') {
+            //epsilon
             return re(p, pos + 1);
         }
 
@@ -117,6 +122,7 @@ public class TopDownParser implements ITopDownParser {
         char c = regEx.charAt(pos);
 
         if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z') {
+            //...
             return new OperandNode("A");
         }
         return null;
