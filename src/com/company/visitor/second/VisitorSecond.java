@@ -17,7 +17,6 @@ public class VisitorSecond implements Visitor {
         followposTableEntries = new TreeMap<>();
     }
 
-  
     @Override
     public void visit(OperandNode node) {
         followposTableEntries.put(node.getPosition(), new FollowposTableEntry(node.getPosition(), node.getSymbol()));
@@ -25,7 +24,7 @@ public class VisitorSecond implements Visitor {
 
 
     @Override
-    public void visit(BinOpNode node) {
+    public void visit(BinOpNode node) {         //walks through tree(binary OpNode==tree with two childs)
         visit(node.getLeft());
         visit(node.getRight());
         if (node.getOperator().equals("°")) {
@@ -39,23 +38,24 @@ public class VisitorSecond implements Visitor {
 
 
     @Override
-    public void visit(UnaryOpNode node) {
+    public void visit(UnaryOpNode node) {        //walks through tree(unary opnode== tree with one child )
         visit(node.getSubNode());
         if (node.getOperator().equals("*") || node.getOperator().equals("+")) {
             for (int lastposindex : node.getLastpos()) {
                 for (int firstpos : node.getFirstpos()) {
-                    System.out.println("Now Adding " + lastposindex + " advalue " + firstpos);
-                    followposTableEntries.get(lastposindex).getFollowpos().add(firstpos);
-
-                    System.out.println(lastposindex + " added" + firstpos);
+           //         System.out.println("Now Adding " + lastposindex + " advalue " + firstpos);        //just to easily see calcualted operands for followpos
+                    followposTableEntries.get(lastposindex).getFollowpos().add(firstpos);       // table entry
+          //          System.out.println(lastposindex + " added" + firstpos);                           //just to easily see calcualted operands for followpos
                 }
             }
         }
 
     }
 
+    //no need to implement OperandOpNode, cause in trees with child those were visited and  followpos will be calcualted
+
     @Override
-    public void visit(Visitable visitable) {
+    public void visit(Visitable visitable) {        // calls methods by type of node
         if (visitable instanceof OperandNode) {
             OperandNode operandNode = (OperandNode) visitable;
             operandNode.accept(this);
