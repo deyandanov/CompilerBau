@@ -13,11 +13,11 @@ public class FollowposTableEntry {
 
     public int getPosition() {
         return position;
-    }
+    }       //do wen need this ?
 
     public String getSymbol() {
         return symbol;
-    }
+    }       //do we need this too ?
 
     public Set<Integer> getFollowpos() {
         return followpos;

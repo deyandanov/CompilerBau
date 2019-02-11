@@ -70,7 +70,7 @@ public class VisitorSecond implements Visitor {
             unaryOpNode.accept(this);
 
         } else {
-            System.err.println("This type of Node is not supported yet!");
+            System.err.println("This type of Node is not supported yet!");      //if there is another not  yet implemented node  (should never print this line)
         }
     }
 
