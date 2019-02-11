@@ -1,6 +1,5 @@
 package com.company;
 
-import com.company.base.testres.TestUtilities;
 import com.company.base.Visitable;
 import com.company.base.Visitor;
 import com.company.parser.ITopDownParser;
@@ -20,20 +19,20 @@ public class Main {
         Visitor visitorFirst = new VisitorFirst();
         Visitor visitorSecond = new VisitorSecond();
 
-        Visitable visitable = null;
+        Visitable tree = null;
 
         Scanner scanner = new Scanner(System.in);
-        String regEx = scanner.next();
+        //String regEx = scanner.next();
 
-        visitable = parser.parse(regEx);
+        tree = parser.parse("(a|b)*a#");
 
-        if(visitable == null) {
+        if(tree == null) {
             System.out.println("Ihr Ausdruck konnte nicht geparst werden!");
             return;
         }
 
-        visitable.accept(visitorFirst);
-        visitable.accept(visitorSecond);
+        tree.accept(visitorFirst);
+        tree.accept(visitorSecond);
 
         SortedMap<Integer, FollowposTableEntry>  followposTableEntries =((VisitorSecond) visitorSecond).getFollowposTableEntries();
 

@@ -9,6 +9,7 @@ import com.company.base.Visitable;
 public class TopDownParser implements ITopDownParser {
 
     private String regEx;
+    private int pos;
 
     @Override
     public Visitable parse(String regEx) {
@@ -22,37 +23,38 @@ public class TopDownParser implements ITopDownParser {
             return new OperandNode("#");
         } else if (regEx.charAt(0) == '(') {
             //(regexp)#
+            pos++;
             OperandNode leaf = new OperandNode("#");
-            BinOpNode root = new BinOpNode("°", regExp(null, 1), leaf);
+            BinOpNode root = new BinOpNode("°", regExp(null), leaf);
             return root;
         }
         return null;
     }
 
-    private Visitable regExp(Visitable p, int pos) {
+    private Visitable regExp(Visitable p) {
         char c = regEx.charAt(pos);
 
         if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z' || c == '(') {
             //termRE
-            return (re(term(null, pos + 1), pos + 1));
+            return (re(term(null)));
         }
 
         return null;
     }
 
-    private Visitable term(Visitable p, int pos) {
+    private Visitable term(Visitable p) {
         char c = regEx.charAt(pos);
 
         if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z' || c == '(') {
             //factor term
             Visitable term1Parameter = null;
             if (p != null) {
-                BinOpNode root = new BinOpNode("°", p, factor(null, pos + 1));
+                BinOpNode root = new BinOpNode("°", p, factor(null));
                 term1Parameter = root;
             } else {
-                term1Parameter = factor(null, pos + 1);
+                term1Parameter = factor(null);
             }
-            return term(term1Parameter, pos + 1);
+            return term(term1Parameter);
         } else if (c == '|' || c == ')') {
             //epsilon
             return p;
@@ -61,12 +63,13 @@ public class TopDownParser implements ITopDownParser {
         return null;
     }
 
-    private Visitable re(Visitable p, int pos) {
+    private Visitable re(Visitable p) {
 
         if (regEx.charAt(pos) == '|') {
             //|termRE
-            BinOpNode root = new BinOpNode("|", p, term(null, pos + 1));
-            return re(root, pos + 1);
+            pos++;
+            BinOpNode root = new BinOpNode("|", p, term(null));
+            return re(root);
         } else if (regEx.charAt(pos) == ')') {
             //epsilon
             return p;
@@ -75,55 +78,59 @@ public class TopDownParser implements ITopDownParser {
         return null;
     }
 
-    private Visitable factor(Visitable p, int pos) {
+    private Visitable factor(Visitable p) {
         char c = regEx.charAt(pos);
 
         if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z' || c == '(') {
             //elem hop
-            return hop(elem(null, pos + 1), pos + 1);
+            return hop(elem(null));
         }
 
         return null;
     }
 
-    private Visitable hop(Visitable p, int pos) {
+    private Visitable hop(Visitable p) {
         char c = regEx.charAt(pos);
 
         if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z' || c == '(' || c == '|' || c == ')') {
             //epsilon
-            return hop(p, pos + 1);
+            return p;
         } else if (c == '*') {
             //sternchen
+            pos++;
             return (new UnaryOpNode("*", p));
         } else if (c == '+') {
             //plus
+            pos++;
             return new UnaryOpNode("+", p);
         } else if (c == '?') {
             //?
+            pos++;
             return new UnaryOpNode("?", p);
         }
         return null;
     }
 
-    private Visitable elem(Visitable p, int pos) {
+    private Visitable elem(Visitable p) {
         char c = regEx.charAt(pos);
 
         if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z') {
             //alphanum
-            return alphanum(null, pos + 1);
+            return alphanum(null);
         } else if (c == '(') {
             //klammer regexp klammer
-            regExp(null, pos + 1);
+            return regExp(null);
         }
         return null;
     }
 
-    private Visitable alphanum(Visitable p, int pos) {
+    private Visitable alphanum(Visitable p) {
         char c = regEx.charAt(pos);
 
         if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z') {
             //...
-            return new OperandNode("A");
+            pos++;
+            return new OperandNode(c + "");
         }
         return null;
     }
