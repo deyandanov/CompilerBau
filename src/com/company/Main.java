@@ -1,6 +1,5 @@
 package com.company;
 
-import com.company.base.testres.TestUtilities;
 import com.company.base.Visitable;
 import com.company.base.Visitor;
 import com.company.parser.ITopDownParser;
