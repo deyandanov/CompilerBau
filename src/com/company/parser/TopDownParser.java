@@ -23,8 +23,8 @@ public class TopDownParser implements ITopDownParser {
             return new OperandNode("#");
         } else if (regEx.charAt(0) == '(') {
             //(regexp)#
-            OperandNode leaf = new OperandNode("#");
             pos++;
+            OperandNode leaf = new OperandNode("#");
             BinOpNode root = new BinOpNode("°", regExp(null), leaf);
             return root;
         }
@@ -49,7 +49,6 @@ public class TopDownParser implements ITopDownParser {
             //factor term
             Visitable term1Parameter = null;
             if (p != null) {
-                pos++;
                 BinOpNode root = new BinOpNode("°", p, factor(null));
                 term1Parameter = root;
             } else {
