@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-public class Lexer {
+public class Lexer {                                                                                    //Created by 2560035
 
     private SortedMap<DFAState, Map<Character, DFAState>> stateTransitionTable = new TreeMap<DFAState, Map<Character, DFAState>>();
     public Lexer(SortedMap<DFAState, Map<Character, DFAState>> stateTransitionTable){
