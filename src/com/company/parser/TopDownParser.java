@@ -4,6 +4,7 @@ import com.company.base.BinOpNode;
 import com.company.base.OperandNode;
 import com.company.base.UnaryOpNode;
 import com.company.base.Visitable;
+import com.company.base.exp.ExpressionNotValidException;
 
 
 public class TopDownParser implements ITopDownParser {
@@ -12,12 +13,12 @@ public class TopDownParser implements ITopDownParser {
     private int pos;
 
     @Override
-    public Visitable parse(String regEx) {
+    public Visitable parse(String regEx) throws ExpressionNotValidException {
         this.regEx = regEx;
         return start();
-    }
+}
 
-    private Visitable start() {
+    private Visitable start() throws ExpressionNotValidException {
         if (regEx.charAt(0) == '#') {
             //#
             return new OperandNode("#");
@@ -28,10 +29,10 @@ public class TopDownParser implements ITopDownParser {
             BinOpNode root = new BinOpNode("°", regExp(null), leaf);
             return root;
         }
-        return null;
+        throw new ExpressionNotValidException();
     }
 
-    private Visitable regExp(Visitable p) {
+    private Visitable regExp(Visitable p) throws ExpressionNotValidException {
         char c = regEx.charAt(pos);
 
         if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z' || c == '(') {
@@ -39,10 +40,10 @@ public class TopDownParser implements ITopDownParser {
             return (re(term(null)));
         }
 
-        return null;
+        throw new ExpressionNotValidException();
     }
 
-    private Visitable term(Visitable p) {
+    private Visitable term(Visitable p) throws ExpressionNotValidException {
         char c = regEx.charAt(pos);
 
         if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z' || c == '(') {
@@ -60,10 +61,10 @@ public class TopDownParser implements ITopDownParser {
             return p;
         }
 
-        return null;
+        throw new ExpressionNotValidException();
     }
 
-    private Visitable re(Visitable p) {
+    private Visitable re(Visitable p) throws ExpressionNotValidException {
 
         if (regEx.charAt(pos) == '|') {
             //|termRE
@@ -76,10 +77,10 @@ public class TopDownParser implements ITopDownParser {
             return p;
         }
 
-        return null;
+        throw new ExpressionNotValidException();
     }
 
-    private Visitable factor(Visitable p) {
+    private Visitable factor(Visitable p) throws ExpressionNotValidException {
         char c = regEx.charAt(pos);
 
         if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z' || c == '(') {
@@ -87,10 +88,10 @@ public class TopDownParser implements ITopDownParser {
             return hop(elem(null));
         }
 
-        return null;
+        throw new ExpressionNotValidException();
     }
 
-    private Visitable hop(Visitable p) {
+    private Visitable hop(Visitable p) throws ExpressionNotValidException {
         char c = regEx.charAt(pos);
 
         if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z' || c == '(' || c == '|' || c == ')') {
@@ -109,10 +110,10 @@ public class TopDownParser implements ITopDownParser {
             pos++;
             return new UnaryOpNode("?", p);
         }
-        return null;
+        throw new ExpressionNotValidException();
     }
 
-    private Visitable elem(Visitable p) {
+    private Visitable elem(Visitable p) throws ExpressionNotValidException {
         char c = regEx.charAt(pos);
 
         if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z') {
@@ -123,10 +124,10 @@ public class TopDownParser implements ITopDownParser {
             pos++;
             return regExp(null);
         }
-        return null;
+        throw new ExpressionNotValidException();
     }
 
-    private Visitable alphanum(Visitable p) {
+    private Visitable alphanum(Visitable p) throws ExpressionNotValidException {
         char c = regEx.charAt(pos);
 
         if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z') {
@@ -134,7 +135,7 @@ public class TopDownParser implements ITopDownParser {
             pos++;
             return new OperandNode(c + "");
         }
-        return null;
+        throw new ExpressionNotValidException();
     }
 
 }

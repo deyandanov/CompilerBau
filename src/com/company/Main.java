@@ -2,6 +2,7 @@ package com.company;
 
 import com.company.base.Visitable;
 import com.company.base.Visitor;
+import com.company.base.exp.ExpressionNotValidException;
 import com.company.parser.ITopDownParser;
 import com.company.parser.TopDownParser;
 import com.company.visitor.first.VisitorFirst;
@@ -27,7 +28,11 @@ public class Main {
 
         String regEx = scanner.next();
 
-        tree = parser.parse(regEx);
+        try {
+            tree = parser.parse(regEx);
+        } catch (ExpressionNotValidException e) {
+            e.printStackTrace();
+        }
 
         if(tree == null) {
             System.out.println("Ihr Ausdruck konnte nicht geparst werden!");
