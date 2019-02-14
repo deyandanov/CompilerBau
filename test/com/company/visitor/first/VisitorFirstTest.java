@@ -30,22 +30,15 @@ public class VisitorFirstTest {
     public void testFirstPos() {
         Visitable testTree = createVisitedTestTree();
         Set<Integer> firstPos = testTree.getFirstpos();
-        if (firstPos.size() == 3 && firstPos.contains(1) && firstPos.contains(2) && firstPos.contains(3)) {
-            Assert.assertTrue(true);
-        } else {
-            Assert.fail();
-        }
+        Assert.assertTrue(firstPos.size() == 3 && firstPos.contains(1) && firstPos.contains(2) && firstPos.contains(3));
     }
 
     @Test
     public void testLastPos() {
         Visitable testTree = createVisitedTestTree();
         Set<Integer> lastPos = testTree.getLastpos();
-        if (lastPos.size() == 1 && lastPos.contains(6)) {
-            Assert.assertTrue(true);
-        } else {
-            Assert.fail();
-        }
+        Assert.assertTrue(lastPos.size() == 1 && lastPos.contains(6));
+
     }
 
     private Visitable createVisitedTestTree() {
