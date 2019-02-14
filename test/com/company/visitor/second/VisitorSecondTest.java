@@ -10,6 +10,7 @@ import java.util.*;
 
 
 public class VisitorSecondTest {
+//Implementiert von Eric Gendner
 
     @Test
     public void secondVisitorTest() {
@@ -52,6 +53,7 @@ public class VisitorSecondTest {
         Assert.assertTrue(mapFollowpos.containsValue(f5));
         Assert.assertTrue(mapFollowpos.containsValue(f6));
 
-        
+
+
     }
 }

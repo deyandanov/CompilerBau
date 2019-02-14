@@ -5,6 +5,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class FollowposTableEntry {
+    //Implementiert von Eric Gendner
+
+
     private final int position;
     private final String symbol;
     private final Set<Integer> followpos = new HashSet<>();
@@ -12,11 +15,11 @@ public class FollowposTableEntry {
 
     public int getPosition() {
         return position;
-    }       //do wen need this ?
+    }
 
     public String getSymbol() {
         return symbol;
-    }       //do we need this too ?
+    }
 
     public Set<Integer> getFollowpos() {
         return followpos;
