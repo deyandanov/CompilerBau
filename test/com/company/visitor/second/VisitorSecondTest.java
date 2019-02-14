@@ -16,9 +16,9 @@ public class VisitorSecondTest {
         Visitable visitable = TestUtilities.createTestTreeFolllowPos();     //calls Methode which generates tree with firstpos and lastpos in elements
         Visitor visitorSecond = new VisitorSecond();
         visitable.accept(visitorSecond);
-        SortedMap<Integer, FollowposTableEntry> MapFollowpos = ((VisitorSecond) visitorSecond).getFollowposTableEntries();
+        SortedMap<Integer, FollowposTableEntry> mapFollowpos = ((VisitorSecond) visitorSecond).getFollowposTableEntries();
 
-        if (MapFollowpos.size() != 6) {
+        if (mapFollowpos.size() != 6) {
             Assert.fail();
             return;
         }
@@ -37,20 +37,21 @@ public class VisitorSecondTest {
         f3.getFollowpos().add(4);
 
         FollowposTableEntry f4 = new FollowposTableEntry(4, "b");
-        f3.getFollowpos().add(5);
+        f4.getFollowpos().add(5);
 
         FollowposTableEntry f5 = new FollowposTableEntry(5, "b");
-        f3.getFollowpos().add(6);
+        f5.getFollowpos().add(6);
 
         FollowposTableEntry f6 = new FollowposTableEntry(6, "#");
 
 
-        Assert.assertTrue(MapFollowpos.containsValue(f1) );
-        Assert.assertTrue(MapFollowpos.containsValue(f2) );
-        Assert.assertTrue(MapFollowpos.containsValue(f3));
-        Assert.assertTrue( MapFollowpos.containsValue(f4));
-        Assert.assertTrue(MapFollowpos.containsValue(f5));
-        Assert.assertTrue(MapFollowpos.containsValue(f6));
+        Assert.assertTrue(mapFollowpos.containsValue(f1));
+        Assert.assertTrue(mapFollowpos.containsValue(f2));
+        Assert.assertTrue(mapFollowpos.containsValue(f3));
+        Assert.assertTrue(mapFollowpos.containsValue(f4));
+        Assert.assertTrue(mapFollowpos.containsValue(f5));
+        Assert.assertTrue(mapFollowpos.containsValue(f6));
 
+        
     }
 }
