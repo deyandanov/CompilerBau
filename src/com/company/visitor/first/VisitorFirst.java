@@ -10,6 +10,8 @@ import java.util.Set;
 public class VisitorFirst implements Visitor {
     //Teil von Noah Börger
 
+    //Der Visitior traversiert selbst den Baum, da bei uns ein Knoten erst als besucht gilt, wenn auch die Referenzen auf seine untergeordneten Subknoten besucht sind
+
     private int position;
 
     public VisitorFirst() {
