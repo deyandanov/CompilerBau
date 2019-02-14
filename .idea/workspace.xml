@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e076f745-9b8d-400f-98d4-bda045314fe0" name="Default Changelist" comment="update">
+    <list default="true" id="e076f745-9b8d-400f-98d4-bda045314fe0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/base/testres/TestUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/base/testres/TestUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/visitor/second/FollowposTableEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/visitor/second/FollowposTableEntry.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,44 +19,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/parser/TopDownParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="140" column="5" selection-start-line="140" selection-start-column="5" selection-end-line="140" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="527">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/company/parser/TopDownParserTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/parser/ITopDownParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+        <entry file="file://$PROJECT_DIR$/test/com/company/visitor/second/VisitorSecondTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="34" column="9" selection-start-line="30" selection-start-column="8" selection-end-line="34" selection-end-column="9" />
+              <caret line="50" column="59" lean-forward="true" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/visitor/second/VisitorSecond.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="21" column="110" selection-start-line="21" selection-start-column="110" selection-end-line="21" selection-end-column="110" />
             </state>
           </provider>
         </entry>
@@ -61,8 +49,65 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/base/exp/ExpressionNotValidException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/base/testres/TestUtilities.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="106" column="47" lean-forward="true" selection-start-line="106" selection-start-column="47" selection-end-line="106" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/visitor/second/FollowposTableEntry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/base/FollowposTableEntry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/base/BinOpNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/base/SyntaxNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -77,6 +122,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>new fo</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -87,15 +137,16 @@
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/parser/ITopDownParser.java" />
         <option value="$PROJECT_DIR$/src/com/company/base/exp/ExpressionNotValidException.java" />
-        <option value="$PROJECT_DIR$/test/com/company/parser/TopDownParserTest.java" />
-        <option value="$PROJECT_DIR$/src/com/company/parser/TopDownParser.java" />
+        <option value="$PROJECT_DIR$/src/com/company/base/testres/TestUtilities.java" />
+        <option value="$PROJECT_DIR$/src/com/company/visitor/second/FollowposTableEntry.java" />
+        <option value="$PROJECT_DIR$/test/com/company/visitor/second/VisitorSecondTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="822" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -103,7 +154,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,12 +180,94 @@
             <path>
               <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
               <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="exp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="testres" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="lexer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="visitor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="visitor" type="462c0819:PsiDirectoryNode" />
+              <item name="second" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="visitor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="visitor" type="462c0819:PsiDirectoryNode" />
+              <item name="first" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="visitor" type="462c0819:PsiDirectoryNode" />
+              <item name="second" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -143,9 +275,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549999548998" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550145893920" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -170,7 +300,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TopDownParserTest">
+  <component name="RunManager" selected="JUnit.VisitorSecondTest.secondVisitorTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="CompilerBau" />
@@ -184,23 +314,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TopDownParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VisitorSecondTest.secondVisitorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CompilerBau" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.parser.*" />
+          <option name="PATTERN" value="com.company.visitor.second.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.company.parser" />
-      <option name="MAIN_CLASS_NAME" value="com.company.parser.TopDownParserTest" />
+      <option name="PACKAGE_NAME" value="com.company.visitor.second" />
+      <option name="MAIN_CLASS_NAME" value="com.company.visitor.second.VisitorSecondTest" />
+      <option name="METHOD_NAME" value="secondVisitorTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TopDownParserTest" />
+        <item itemvalue="JUnit.VisitorSecondTest.secondVisitorTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -290,42 +422,22 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TopDownParserTest - 2019.02.12 at 13h 33m 55s.xml">
-      <configuration name="TopDownParserTest" configurationId="JUnit" />
+    <history-entry file="VisitorSecondTest_secondVisitorTest - 2019.02.14 at 12h 57m 55s.xml">
+      <configuration name="VisitorSecondTest.secondVisitorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TopDownParserTest - 2019.02.12 at 13h 34m 23s.xml">
-      <configuration name="TopDownParserTest" configurationId="JUnit" />
+    <history-entry file="VisitorSecondTest_secondVisitorTest - 2019.02.14 at 12h 59m 25s.xml">
+      <configuration name="VisitorSecondTest.secondVisitorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TopDownParserTest - 2019.02.12 at 13h 34m 33s.xml">
-      <configuration name="TopDownParserTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TopDownParserTest - 2019.02.12 at 13h 35m 05s.xml">
-      <configuration name="TopDownParserTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TopDownParserTest - 2019.02.12 at 13h 35m 45s.xml">
-      <configuration name="TopDownParserTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TopDownParserTest - 2019.02.12 at 13h 35m 53s.xml">
-      <configuration name="TopDownParserTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TopDownParserTest - 2019.02.12 at 13h 36m 10s.xml">
-      <configuration name="TopDownParserTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TopDownParserTest - 2019.02.12 at 13h 36m 33s.xml">
-      <configuration name="TopDownParserTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TopDownParserTest - 2019.02.12 at 13h 36m 48s.xml">
-      <configuration name="TopDownParserTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TopDownParserTest - 2019.02.12 at 13h 39m 21s.xml">
-      <configuration name="TopDownParserTest" configurationId="JUnit" />
+    <history-entry file="VisitorSecondTest_secondVisitorTest - 2019.02.14 at 13h 02m 58s.xml">
+      <configuration name="VisitorSecondTest.secondVisitorTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="822" extended-state="0" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49898168" visible="true" weight="0.26037195" />
-      <window_info id="Structure" order="1" sideWeight="0.50101835" side_tool="true" weight="0.25679544" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26695842" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -333,7 +445,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32739726" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33041576" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.21686748" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -341,7 +453,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32739726" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32719395" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -363,62 +475,136 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/company/parser/TopDownParserDos.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/parser/ITopDownParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/company/visitor/first/VisitorFirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="671">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="54" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/visitor/first/VisitorFirst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/Visitable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/Visitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/base/OperandNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="170">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/DFAState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/FollowposTableEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/SyntaxNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/base/BinOpNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/parser/TopDownParserDos.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/parser/TopDownParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="140" column="5" selection-start-line="140" selection-start-column="5" selection-end-line="140" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/company/parser/TopDownParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/parser/ITopDownParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/parser/TopDownParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/exp/ExpressionNotValidException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/visitor/second/VisitorSecond.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="21" column="110" selection-start-line="21" selection-start-column="110" selection-end-line="21" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/visitor/second/FollowposTableEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/company/visitor/second/VisitorSecondTest.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="34" column="9" selection-start-line="30" selection-start-column="8" selection-end-line="34" selection-end-column="9" />
+          <caret line="50" column="59" lean-forward="true" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/testres/TestUtilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="106" column="47" lean-forward="true" selection-start-line="106" selection-start-column="47" selection-end-line="106" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
