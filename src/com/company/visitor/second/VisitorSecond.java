@@ -9,7 +9,7 @@ import java.util.SortedMap;
 import java.util.TreeMap;
 
 public class VisitorSecond implements Visitor {
-
+//Implementiert von Eric Gendner
 
     private SortedMap<Integer, FollowposTableEntry> followposTableEntries;
 
@@ -24,10 +24,10 @@ public class VisitorSecond implements Visitor {
 
 
     @Override
-    public void visit(BinOpNode node) {         //walks through tree(binary OpNode==tree with two childs)
+    public void visit(BinOpNode node) {         //walks through tree(binary OpNode==tree with two children)
         visit(node.getLeft());
         visit(node.getRight());
-        if (node.getOperator().equals("°")) {
+        if (node.getOperator().equals("°")) {       //° is only Binary Operator to calculate Followpos
             for (int lastposindex : node.getLeft().getLastpos()) {
                 for (int firstPos2 : node.getRight().getFirstpos()) {
                     followposTableEntries.get(lastposindex).getFollowpos().add(firstPos2);
@@ -40,12 +40,10 @@ public class VisitorSecond implements Visitor {
     @Override
     public void visit(UnaryOpNode node) {        //walks through tree(unary opnode== tree with one child )
         visit(node.getSubNode());
-        if (node.getOperator().equals("*") || node.getOperator().equals("+")) {
+        if (node.getOperator().equals("*") || node.getOperator().equals("+")) {     //check if Unary OpNodes are + or * and calculate Followpos
             for (int lastposindex : node.getLastpos()) {
                 for (int firstpos : node.getFirstpos()) {
-           //         System.out.println("Now Adding " + lastposindex + " advalue " + firstpos);        //just to easily see calcualted operands for followpos
                     followposTableEntries.get(lastposindex).getFollowpos().add(firstpos);       // table entry
-          //          System.out.println(lastposindex + " added" + firstpos);                           //just to easily see calcualted operands for followpos
                 }
             }
         }
