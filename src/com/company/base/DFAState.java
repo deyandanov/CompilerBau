@@ -1,32 +1,41 @@
 package com.company.base;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class DFAState implements Comparable<DFAState> {
 
     public final int index;
-    public final Boolean isAcceptingState;
+    public Boolean isAcceptingState;
     public final Set<Integer> positionsSet;
+    private int i;
+
     public DFAState(int index,
                     Boolean isAcceptingState,
-                    Set<Integer> positionsSet)
-    {
+                    Set<Integer> positionsSet) {
         this.index = index;
         this.isAcceptingState = isAcceptingState;
         this.positionsSet = positionsSet;
     }
+
+    public DFAState(boolean b, HashSet<Integer> positionSet) {
+        isAcceptingState = b;
+        this.positionsSet = positionSet;
+        index = i;
+        i++;
+    }
+
     @Override
-    public boolean equals(Object obj)
-    {
-        if(this == obj) return true;
-        if(obj == null) return false;
-        if(getClass() != obj.getClass()) return false;
-        DFAState other = (DFAState)obj;
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null) return false;
+        if (getClass() != obj.getClass()) return false;
+        DFAState other = (DFAState) obj;
         return (other.index == this.index);
     }
+
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         final int prime = 31;
         int result = 1;
         result = prime * result + this.index;
