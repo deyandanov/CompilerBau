@@ -37,18 +37,18 @@ public class VisitorSecondTest {
         f3.getFollowpos().add(4);
 
         FollowposTableEntry f4 = new FollowposTableEntry(4, "b");
-        f3.getFollowpos().add(5);
+        f4.getFollowpos().add(5);
 
         FollowposTableEntry f5 = new FollowposTableEntry(5, "b");
-        f3.getFollowpos().add(6);
+        f5.getFollowpos().add(6);
 
         FollowposTableEntry f6 = new FollowposTableEntry(6, "#");
 
 
-        Assert.assertTrue(MapFollowpos.containsValue(f1) );
-        Assert.assertTrue(MapFollowpos.containsValue(f2) );
+        Assert.assertTrue(MapFollowpos.containsValue(f1));
+        Assert.assertTrue(MapFollowpos.containsValue(f2));
         Assert.assertTrue(MapFollowpos.containsValue(f3));
-        Assert.assertTrue( MapFollowpos.containsValue(f4));
+        Assert.assertTrue(MapFollowpos.containsValue(f4));
         Assert.assertTrue(MapFollowpos.containsValue(f5));
         Assert.assertTrue(MapFollowpos.containsValue(f6));
 
