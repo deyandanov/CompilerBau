@@ -24,25 +24,32 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Geben Sie ihren regulären Ausdruck in der Form (r)# ein:");
+        boolean expressionParsed = false;
 
-        String regEx = scanner.next();
+        while (!expressionParsed) {
 
-        try {
-            tree = parser.parse(regEx);
-        } catch (ExpressionNotValidException e) {
-            e.printStackTrace();
+            System.out.println("Geben Sie ihren regulären Ausdruck in der Form (r)# ein:");
+
+            String regEx = scanner.next();
+
+            try {
+                tree = parser.parse(regEx);
+            } catch (ExpressionNotValidException e) {
+                System.out.println("Ihr Ausdruck konnte nicht geparst werden!");
+                if (tree != null) {
+                    e.printStackTrace();
+                    return;
+                }
+            }
+
+            if (tree != null) {
+                expressionParsed = true;
+            }
         }
-
-        if(tree == null) {
-            System.out.println("Ihr Ausdruck konnte nicht geparst werden!");
-            return;
-        }
-
         tree.accept(visitorFirst);
         tree.accept(visitorSecond);
 
-        SortedMap<Integer, FollowposTableEntry>  followposTableEntries =((VisitorSecond) visitorSecond).getFollowposTableEntries();
+        SortedMap<Integer, FollowposTableEntry> followposTableEntries = ((VisitorSecond) visitorSecond).getFollowposTableEntries();
 
         //TODO: Ausführen des DEA-Erzeugers und des Lexers
 
