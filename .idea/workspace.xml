@@ -16,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/parser/TopDownParser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="527">
@@ -118,6 +118,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -134,7 +135,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/company/parser/TopDownParserDos.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/company/parser/TopDownParser.java" />
         <option value="$PROJECT_DIR$/src/com/company/parser/ITopDownParser.java" />
         <option value="$PROJECT_DIR$/src/com/company/base/exp/ExpressionNotValidException.java" />
         <option value="$PROJECT_DIR$/src/com/company/base/testres/TestUtilities.java" />
@@ -280,6 +280,14 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.company.parser" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -396,7 +404,21 @@
       <option name="project" value="LOCAL" />
       <updated>1549972626327</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Author added">
+      <created>1549972960104</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1549972960104</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update">
+      <created>1549975135888</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1549975135888</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -448,7 +470,9 @@
     <MESSAGE value="es funktioniert nicht, aber keine Ahnung warum" />
     <MESSAGE value="funktioniert" />
     <MESSAGE value="Exception added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exception added" />
+    <MESSAGE value="Author added" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/parser/TopDownParserDos.java" />
@@ -584,6 +608,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/exp/ExpressionNotValidException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
