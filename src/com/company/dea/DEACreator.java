@@ -8,7 +8,7 @@ import java.util.*;
 
 public class DEACreator {
 
-    private SortedMap<DFAState, Map<Character, DFAState>> stateTransitionTable = new TreeMap<DFAState, Map<Character, DFAState>>();
+    private SortedMap<DFAState, Map<Character, DFAState>> stateTransitionTable = new TreeMap<>();
     private VisitorSecond visitorSecond = new VisitorSecond();
     private SortedMap<Integer, FollowposTableEntry> followposTableEntries;
 
@@ -18,11 +18,11 @@ public class DEACreator {
 
     public SortedMap<DFAState, Map<Character, DFAState>> createTable(){
 
-        //FollowposTableEntry root = followposTableEntries.firstKey().getValue();
+
         FollowposTableEntry root = followposTableEntries.get(followposTableEntries.firstKey());
         //firstPos anwenden um T0 zu bekommen und zu stateTransitionTable hinzufügen
         //test
-        DFAState firstState = new DFAState(false, new HashSet<Integer>(Arrays.asList(1, 2, 3)));
+        DFAState firstState = new DFAState(false, new HashSet<>(Arrays.asList(1, 2, 3)));
         stateTransitionTable.put(firstState, null);
 
         //woher firstPos?
@@ -35,7 +35,11 @@ public class DEACreator {
             Map<Character, DFAState> symbolToState = new HashMap<>();
             for (Integer pos : newState.positionsSet) {
                 int i = pos;
-                FollowposTableEntry relatedEntry = followposTableEntries.get(i);
+
+                FollowposTableEntry relatedEntry;
+                relatedEntry = followposTableEntries.get(i);
+                relatedEntry.getFollowpos().size();
+
                 char symbol = relatedEntry.getSymbol().charAt(0);
                 if (symbol == '#') continue;
                 if (null != symbolToState.get(symbol))

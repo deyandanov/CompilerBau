@@ -3,6 +3,8 @@ package com.company.integration;
 import com.company.base.Visitable;
 import com.company.base.Visitor;
 import com.company.base.exp.ExpressionNotValidException;
+import com.company.dea.DEACreator;
+import com.company.lexer.Lexer;
 import com.company.parser.ITopDownParser;
 import com.company.parser.TopDownParser;
 import com.company.visitor.first.VisitorFirst;
@@ -34,6 +36,8 @@ public class IntegrationsTest {
         visitable.accept(visitorFirst);
         visitable.accept(visitorSecond);
         SortedMap<Integer, FollowposTableEntry> followposTableEntryMap = ((VisitorSecond) visitorSecond).getFollowposTableEntries();
-        //Todo: weitergeben an DEA Erzeuger und Lexer um vollständige FKT zu testen, sobald der DEA Erzeuger geschrieben wurde
+        DEACreator deaCreator = new DEACreator(followposTableEntryMap);
+        Lexer lexer = new Lexer(deaCreator.createTable());
+        Assert.assertTrue(lexer.match("ababbbaaa"));
     }
 }
