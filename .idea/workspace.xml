@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e076f745-9b8d-400f-98d4-bda045314fe0" name="Default Changelist" comment="">
+    <list default="true" id="e076f745-9b8d-400f-98d4-bda045314fe0" name="Default Changelist" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CompilerBau/com/company/base/DFAState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CompilerBau/com/company/base/DFAState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CompilerBau/com/company/base/FollowposTableEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CompilerBau/com/company/visitor/second/FollowposTableEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CompilerBau/com/company/visitor/second/FollowposTableEntry.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/CompilerBau/com/company/integration/IntegrationsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/CompilerBau/com/company/integration/IntegrationsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/CompilerBau/com/company/lexer/LexerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/CompilerBau/com/company/lexer/LexerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/base/DFAState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/base/DFAState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/base/FollowposTableEntry.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/dea/DEACreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/dea/DEACreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/visitor/second/FollowposTableEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/visitor/second/FollowposTableEntry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/company/dea/DEACreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/company/dea/DEACreatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/company/integration/IntegrationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/company/integration/IntegrationsTest.java" afterDir="false" />
     </list>
@@ -18,40 +25,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/company/visitor/second/VisitorSecondTest.java">
+        <entry file="file://$PROJECT_DIR$/test/com/company/integration/IntegrationsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="32" />
+            <state relative-caret-position="341">
+              <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/company/integration/IntegrationsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="39" column="80" selection-start-line="39" selection-start-column="80" selection-end-line="39" selection-end-column="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/lexer/Lexer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/company/lexer/LexerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -59,20 +39,51 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/dea/DEACreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="120" selection-start-line="120" selection-end-line="120" />
+            <state relative-caret-position="402">
+              <caret line="25" column="153" lean-forward="true" selection-start-line="25" selection-start-column="153" selection-end-line="25" selection-end-column="153" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4188#4198#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+        <entry file="file://$PROJECT_DIR$/src/com/company/visitor/second/VisitorSecond.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="341">
+              <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/base/DFAState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1035#1036#0" expanded="true" />
+                <element signature="e#1084#1085#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/visitor/second/FollowposTableEntry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#765#766#0" expanded="true" />
+                <element signature="e#794#795#0" expanded="true" />
+                <element signature="e#836#837#0" expanded="true" />
+                <element signature="e#868#869#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,16 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="240" selection-start-line="240" selection-end-line="240" />
-              <folding>
-                <element signature="e#2111#2112#0" expanded="true" />
-                <element signature="e#2155#2156#0" expanded="true" />
-                <element signature="e#5951#6086#0" expanded="true" />
-                <element signature="e#6085#6086#0" expanded="true" />
-                <element signature="e#6484#6648#0" expanded="true" />
-                <element signature="e#6647#6648#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="226" column="16" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -97,17 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="833">
+              <caret line="71" selection-start-line="71" selection-end-line="71" />
             </state>
           </provider>
         </entry>
@@ -115,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/company/dea/DEACreatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="25" column="120" selection-start-line="25" selection-start-column="120" selection-end-line="25" selection-end-column="120" />
+            <state relative-caret-position="357">
+              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -129,8 +123,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -140,6 +134,12 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Lenny" />
+        <option value="lenny &lt;lenny.schupp@gmx.de&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -152,8 +152,13 @@
         <option value="$PROJECT_DIR$/src/com/company/base/testres/TestUtilities.java" />
         <option value="$PROJECT_DIR$/test/com/company/visitor/second/VisitorSecondTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/visitor/second/VisitorSecond.java" />
+        <option value="$PROJECT_DIR$/src/com/company/dea/DFAMap.java" />
+        <option value="$PROJECT_DIR$/src/com/company/dea/DFACreator.java" />
+        <option value="$PROJECT_DIR$/src/com/company/dea/DFAGenerator.java" />
         <option value="$PROJECT_DIR$/src/com/company/visitor/second/FollowposTableEntry.java" />
+        <option value="$PROJECT_DIR$/test/com/company/dea/DFABuilderTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/base/DFAState.java" />
+        <option value="$PROJECT_DIR$/src/com/company/dea/DEAGenerator.java" />
         <option value="$PROJECT_DIR$/test/com/company/integration/IntegrationsTest.java" />
         <option value="$PROJECT_DIR$/test/com/company/dea/DEACreatorTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/dea/DEACreator.java" />
@@ -170,8 +175,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,6 +231,14 @@
             <path>
               <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
               <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="visitor" type="462c0819:PsiDirectoryNode" />
+              <item name="second" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -250,25 +261,12 @@
               <item name="company" type="462c0819:PsiDirectoryNode" />
               <item name="integration" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="visitor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="visitor" type="462c0819:PsiDirectoryNode" />
-              <item name="second" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -278,9 +276,10 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550231956543" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550255175861" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -292,6 +291,9 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.company.dea" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -306,7 +308,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IntegrationsTest.IntegrationsTest">
+  <component name="RunManager" selected="JUnit.DEACreatorTest.createTable">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="CompilerBau" />
@@ -331,6 +333,22 @@
       <option name="PACKAGE_NAME" value="com.company.dea" />
       <option name="MAIN_CLASS_NAME" value="com.company.dea.DEACreatorTest" />
       <option name="METHOD_NAME" value="createTable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DFABuilderTest.buildDEA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CompilerBau" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.dea.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.dea" />
+      <option name="MAIN_CLASS_NAME" value="com.company.dea.DFABuilderTest" />
+      <option name="METHOD_NAME" value="buildDEA" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -370,8 +388,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.IntegrationsTest.IntegrationsTest" />
         <item itemvalue="JUnit.DEACreatorTest.createTable" />
+        <item itemvalue="JUnit.IntegrationsTest.IntegrationsTest" />
+        <item itemvalue="JUnit.DFABuilderTest.buildDEA" />
         <item itemvalue="JUnit.VisitorSecondTest.secondVisitorTest" />
         <item itemvalue="Application.Main" />
       </list>
@@ -387,7 +406,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549872713074</updated>
-      <workItem from="1550154499254" duration="4993000" />
+      <workItem from="1550154499254" duration="12435000" />
+      <workItem from="1550240164123" duration="8706000" />
     </task>
     <task id="LOCAL-00001" summary="es funktioniert, aber keine Ahnung warum">
       <created>1549875518035</created>
@@ -480,46 +500,54 @@
       <option name="project" value="LOCAL" />
       <updated>1550157033754</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update">
+      <created>1550232003765</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1550232003765</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 12h 33m 59s.xml">
+    <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 16h 03m 47s.xml">
       <configuration name="DEACreatorTest.createTable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 12h 34m 44s.xml">
+    <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 16h 14m 11s.xml">
       <configuration name="DEACreatorTest.createTable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 12h 36m 50s.xml">
+    <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 16h 23m 36s.xml">
       <configuration name="DEACreatorTest.createTable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 12h 38m 34s.xml">
+    <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 16h 30m 02s.xml">
       <configuration name="DEACreatorTest.createTable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntegrationsTest_IntegrationsTest - 2019.02.15 at 12h 41m 17s.xml">
-      <configuration name="IntegrationsTest.IntegrationsTest" configurationId="JUnit" />
+    <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 16h 36m 34s.xml">
+      <configuration name="DEACreatorTest.createTable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntegrationsTest_IntegrationsTest - 2019.02.15 at 12h 41m 21s.xml">
-      <configuration name="IntegrationsTest.IntegrationsTest" configurationId="JUnit" />
+    <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 16h 37m 04s.xml">
+      <configuration name="DEACreatorTest.createTable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntegrationsTest_IntegrationsTest - 2019.02.15 at 12h 41m 41s.xml">
-      <configuration name="IntegrationsTest.IntegrationsTest" configurationId="JUnit" />
+    <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 16h 38m 01s.xml">
+      <configuration name="DEACreatorTest.createTable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntegrationsTest_IntegrationsTest - 2019.02.15 at 12h 50m 00s.xml">
-      <configuration name="IntegrationsTest.IntegrationsTest" configurationId="JUnit" />
+    <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 16h 38m 31s.xml">
+      <configuration name="DEACreatorTest.createTable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntegrationsTest_IntegrationsTest - 2019.02.15 at 12h 50m 49s.xml">
-      <configuration name="IntegrationsTest.IntegrationsTest" configurationId="JUnit" />
+    <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 19h 00m 44s.xml">
+      <configuration name="DEACreatorTest.createTable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntegrationsTest_IntegrationsTest - 2019.02.15 at 12h 54m 10s.xml">
-      <configuration name="IntegrationsTest.IntegrationsTest" configurationId="JUnit" />
+    <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 19h 20m 21s.xml">
+      <configuration name="DEACreatorTest.createTable" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4993000" />
+    <option name="totallyTimeSpent" value="21141000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1295573" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -528,20 +556,19 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32647464" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.33744857" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32784638" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32647464" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49934897" weight="0.33744857" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50065106" side_tool="true" weight="0.33744857" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32921812" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32647464" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -550,6 +577,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,18 +603,6 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/dea/DEACreator.java</url>
-          <line>120</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/dea/DEACreator.java</url>
-          <line>119</line>
-          <properties />
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -645,24 +661,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/base/FollowposTableEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/parser/TopDownParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/visitor/second/VisitorSecond.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -677,16 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1751">
           <caret line="106" column="47" selection-start-line="106" selection-start-column="47" selection-end-line="106" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/visitor/second/FollowposTableEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -714,16 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/base/DFAState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/company/lexer/LexerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -738,37 +720,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/company/visitor/second/VisitorSecondTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/company/dea/DEACreatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="25" column="120" selection-start-line="25" selection-start-column="120" selection-end-line="25" selection-end-column="120" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/company/integration/IntegrationsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="39" column="80" selection-start-line="39" selection-start-column="80" selection-end-line="39" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="221">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -779,34 +734,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+    <entry file="file://$PROJECT_DIR$/src/com/company/dea/DFAMap.java" />
+    <entry file="file://$PROJECT_DIR$/test/com/company/visitor/second/VisitorSecondTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="240" selection-start-line="240" selection-end-line="240" />
+        <state relative-caret-position="119">
+          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="32" />
           <folding>
-            <element signature="e#2111#2112#0" expanded="true" />
-            <element signature="e#2155#2156#0" expanded="true" />
-            <element signature="e#5951#6086#0" expanded="true" />
-            <element signature="e#6085#6086#0" expanded="true" />
-            <element signature="e#6484#6648#0" expanded="true" />
-            <element signature="e#6647#6648#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="833">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="226" column="16" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/dea/DFABuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/FollowposTableEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/company/dea/DFABuilderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="86" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="20" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/visitor/second/VisitorSecond.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/visitor/second/FollowposTableEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#794#795#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/DFAState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
+            <element signature="e#1084#1085#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/company/integration/IntegrationsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/dea/DEAGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="74" column="44" selection-start-line="74" selection-start-column="44" selection-end-line="74" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2986#2987#0" expanded="true" />
+            <element signature="e#3045#3046#0" expanded="true" />
+            <element signature="e#3085#3086#0" expanded="true" />
+            <element signature="e#3126#3127#0" expanded="true" />
+            <element signature="e#3161#3162#0" expanded="true" />
+            <element signature="e#3219#3220#0" expanded="true" />
+            <element signature="e#3267#3268#0" expanded="true" />
+            <element signature="e#3329#3330#0" expanded="true" />
+            <element signature="e#3368#3369#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/company/dea/DEACreatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/dea/DEACreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        <state relative-caret-position="402">
+          <caret line="25" column="153" lean-forward="true" selection-start-line="25" selection-start-column="153" selection-end-line="25" selection-end-column="153" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4188#4198#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -852,7 +907,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>11</last-edited>
+          <last-edited>11.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
