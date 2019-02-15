@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e076f745-9b8d-400f-98d4-bda045314fe0" name="Default Changelist" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CompilerBau/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CompilerBau/com/company/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CompilerBau/com/company/base/DFAState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CompilerBau/com/company/base/DFAState.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CompilerBau/com/company/base/testres/TestUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CompilerBau/com/company/base/testres/TestUtilities.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CompilerBau/com/company/visitor/first/VisitorFirst.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CompilerBau/com/company/visitor/first/VisitorFirst.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/CompilerBau/com/company/integration/IntegrationsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/CompilerBau/com/company/integration/IntegrationsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/base/DFAState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/base/DFAState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/base/exp/ExpressionNotValidException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/base/exp/ExpressionNotValidException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/base/testres/TestUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/base/testres/TestUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/parser/ITopDownParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/parser/ITopDownParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/parser/TopDownParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/parser/TopDownParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/visitor/first/VisitorFirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/visitor/first/VisitorFirst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/company/integration/IntegrationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/company/integration/IntegrationsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/company/parser/TopDownParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/company/parser/TopDownParserTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,11 +57,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/company/lexer/LexerTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
               <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/base/exp/ExpressionNotValidException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -121,15 +120,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/base/BinOpNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -171,12 +161,12 @@
         <option value="$PROJECT_DIR$/src/com/company/visitor/first/VisitorFirst.java" />
         <option value="$PROJECT_DIR$/src/com/company/base/DFAState.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/company/base/exp/ExpressionNotValidException.java" />
         <option value="$PROJECT_DIR$/src/com/company/base/testres/TestUtilities.java" />
         <option value="$PROJECT_DIR$/test/com/company/integration/IntegrationsTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/parser/TopDownParser.java" />
         <option value="$PROJECT_DIR$/src/com/company/parser/ITopDownParser.java" />
         <option value="$PROJECT_DIR$/test/com/company/parser/TopDownParserTest.java" />
+        <option value="$PROJECT_DIR$/src/com/company/base/exp/ExpressionNotValidException.java" />
       </list>
     </option>
   </component>
@@ -210,6 +200,21 @@
               <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="exp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
@@ -256,7 +261,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550266212459" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550266250388" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -383,7 +388,7 @@
       <updated>1549872713074</updated>
       <workItem from="1550154499254" duration="12435000" />
       <workItem from="1550240164123" duration="8706000" />
-      <workItem from="1550264934412" duration="1265000" />
+      <workItem from="1550264934412" duration="1303000" />
     </task>
     <task id="LOCAL-00001" summary="es funktioniert, aber keine Ahnung warum">
       <created>1549875518035</created>
@@ -519,13 +524,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22406000" />
+    <option name="totallyTimeSpent" value="22444000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16717096" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18305598" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -721,13 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/base/exp/ExpressionNotValidException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/base/testres/TestUtilities.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2295">
@@ -817,6 +815,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/exp/ExpressionNotValidException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
         </state>
       </provider>
     </entry>
