@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import java.util.*;
 
-public class LexerTest {                                                                                        //Created by 2560035
+public class LexerTest {                                                                                        //Created by Deyan Danov
 
     @Test
     public void match() {
