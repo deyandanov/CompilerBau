@@ -111,5 +111,36 @@ public class DEACreator {
         return newStates;
     }
 
+    SortedMap<Integer, FollowposTableEntry> followPosTableEntries = new TreeMap<>();
+
+
+    public SortedMap<DFAState, Map<Character, DFAState>> createDFATable(SortedMap<Integer, FollowposTableEntry> followPosTableEntries) {
+        ArrayList<DFAState> stateEntries = new ArrayList<>();
+        for (int i = 0; i < followPosTableEntries.size(); i++) {
+            boolean isAcceptingState = false;
+            if (followPosTableEntries.get(i).getSymbol().equals("#")) isAcceptingState = true;
+            stateEntries.add(new DFAState(followPosTableEntries.get(i).getPosition(),
+                    isAcceptingState,
+                    followPosTableEntries.get(i).getFollowpos()));
+        }
+        SortedMap<DFAState, Map<Character, DFAState>> dfaTransitionMatrix = new TreeMap<>();
+        for (int i = 0; i < stateEntries.size(); i++) {
+            Map<Character, DFAState> temporaryMap = new TreeMap<>();
+            Object[] theFollowPositions = stateEntries.get(i).positionsSet.toArray();
+            for (int j = 0; j < theFollowPositions.length; j++) {
+                for (int k = 0; k < followPosTableEntries.size(); k++) {
+                    if ((int) theFollowPositions[j] == followPosTableEntries.get(k).getPosition()) {
+                        String theString = followPosTableEntries.get(k).getSymbol();
+                        temporaryMap.put(theString.charAt(0), stateEntries.get(k));
+                    }
+                }
+            }
+            dfaTransitionMatrix.put(stateEntries.get(i), temporaryMap);
+        }
+        //finalTable
+        return dfaTransitionMatrix;
+    }
+
+
 }
 

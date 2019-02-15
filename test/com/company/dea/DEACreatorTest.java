@@ -23,7 +23,7 @@ public class DEACreatorTest {
 
         DEACreator creator = new DEACreator(positionFollowPosMap);
 
-        SortedMap<DFAState, Map<Character, DFAState>> stateTransitionTable = creator.createTable();
+        SortedMap<DFAState, Map<Character, DFAState>> stateTransitionTable = creator.createDFATable(positionFollowPosMap);
 
 
         assertEquals(4, stateTransitionTable.keySet().size());

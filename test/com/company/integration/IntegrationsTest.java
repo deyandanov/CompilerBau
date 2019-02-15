@@ -37,7 +37,7 @@ public class IntegrationsTest {
         visitable.accept(visitorSecond);
         SortedMap<Integer, FollowposTableEntry> followposTableEntryMap = ((VisitorSecond) visitorSecond).getFollowposTableEntries();
         DEACreator deaCreator = new DEACreator(followposTableEntryMap);
-        Lexer lexer = new Lexer(deaCreator.createTable());
+        Lexer lexer = new Lexer(deaCreator.createDFATable(followposTableEntryMap));
         Assert.assertTrue(lexer.match("ababbbaaa"));
     }
 }
