@@ -17,11 +17,13 @@ import java.util.SortedMap;
 
 public class IntegrationsTest {
 
+
     @Test
-    public void IntegrationsTest() {
+    public void IntegrationTest() {
         ITopDownParser parser = new TopDownParser();
         Visitor visitorFirst = new VisitorFirst();
-        Visitor visitorSecond = new VisitorSecond();
+        VisitorSecond visitorSecond = new VisitorSecond();
+        DEACreator deaCreator = new DEACreator();
 
         Visitable visitable = null;
         try {
@@ -35,10 +37,12 @@ public class IntegrationsTest {
 
         visitable.accept(visitorFirst);
         visitable.accept(visitorSecond);
-        SortedMap<Integer, FollowposTableEntry> followposTableEntryMap = ((VisitorSecond) visitorSecond).getFollowposTableEntries();
-        DEACreator deaCreator = new DEACreator();
 
-       Lexer lexer = new Lexer(deaCreator.createTable(followposTableEntryMap));
+        SortedMap<Integer, FollowposTableEntry> followposTableEntries = visitorSecond.getFollowposTableEntries();
 
+
+        Lexer lexer = new Lexer(deaCreator.createTable(followposTableEntries));
+
+        Assert.assertTrue(lexer.match("aababbbaabaab"));
     }
 }

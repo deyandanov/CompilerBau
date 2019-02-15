@@ -2,18 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e076f745-9b8d-400f-98d4-bda045314fe0" name="Default Changelist" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CompilerBau/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CompilerBau/com/company/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CompilerBau/com/company/base/DFAState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CompilerBau/com/company/base/DFAState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CompilerBau/com/company/base/FollowposTableEntry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CompilerBau/com/company/visitor/second/FollowposTableEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CompilerBau/com/company/visitor/second/FollowposTableEntry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CompilerBau/com/company/base/testres/TestUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CompilerBau/com/company/base/testres/TestUtilities.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CompilerBau/com/company/visitor/first/VisitorFirst.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CompilerBau/com/company/visitor/first/VisitorFirst.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/CompilerBau/com/company/integration/IntegrationsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/CompilerBau/com/company/integration/IntegrationsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/CompilerBau/com/company/lexer/LexerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/CompilerBau/com/company/lexer/LexerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/base/DFAState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/base/DFAState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/base/FollowposTableEntry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/dea/DEACreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/dea/DEACreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/visitor/second/FollowposTableEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/visitor/second/FollowposTableEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/company/dea/DEACreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/company/dea/DEACreatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/base/exp/ExpressionNotValidException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/base/exp/ExpressionNotValidException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/base/testres/TestUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/base/testres/TestUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/parser/ITopDownParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/parser/ITopDownParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/parser/TopDownParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/parser/TopDownParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/visitor/first/VisitorFirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/visitor/first/VisitorFirst.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/company/integration/IntegrationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/company/integration/IntegrationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/company/parser/TopDownParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/company/parser/TopDownParserTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,33 +31,68 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/company/integration/IntegrationsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+            <state relative-caret-position="306">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/dea/DEACreator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="25" column="153" lean-forward="true" selection-start-line="25" selection-start-column="153" selection-end-line="25" selection-end-column="153" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4188#4198#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/visitor/second/VisitorSecond.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/parser/TopDownParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
+            <state relative-caret-position="68">
+              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/parser/ITopDownParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/company/parser/TopDownParserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/company/lexer/LexerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/visitor/first/VisitorFirst.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3060">
+              <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/company/visitor/first/VisitorFirstTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,59 +100,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/base/DFAState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1035#1036#0" expanded="true" />
-                <element signature="e#1084#1085#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/visitor/second/FollowposTableEntry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#765#766#0" expanded="true" />
-                <element signature="e#794#795#0" expanded="true" />
-                <element signature="e#836#837#0" expanded="true" />
-                <element signature="e#868#869#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="226" column="16" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/company/dea/DEACreatorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/company/visitor/second/VisitorSecondTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/base/BinOpNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -146,10 +158,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/company/parser/TopDownParserDos.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/company/parser/ITopDownParser.java" />
-        <option value="$PROJECT_DIR$/src/com/company/base/exp/ExpressionNotValidException.java" />
-        <option value="$PROJECT_DIR$/src/com/company/base/testres/TestUtilities.java" />
         <option value="$PROJECT_DIR$/test/com/company/visitor/second/VisitorSecondTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/visitor/second/VisitorSecond.java" />
         <option value="$PROJECT_DIR$/src/com/company/dea/DFAMap.java" />
@@ -157,24 +165,34 @@
         <option value="$PROJECT_DIR$/src/com/company/dea/DFAGenerator.java" />
         <option value="$PROJECT_DIR$/src/com/company/visitor/second/FollowposTableEntry.java" />
         <option value="$PROJECT_DIR$/test/com/company/dea/DFABuilderTest.java" />
-        <option value="$PROJECT_DIR$/src/com/company/base/DFAState.java" />
         <option value="$PROJECT_DIR$/src/com/company/dea/DEAGenerator.java" />
-        <option value="$PROJECT_DIR$/test/com/company/integration/IntegrationsTest.java" />
         <option value="$PROJECT_DIR$/test/com/company/dea/DEACreatorTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/dea/DEACreator.java" />
+        <option value="$PROJECT_DIR$/src/com/company/visitor/first/VisitorFirst.java" />
+        <option value="$PROJECT_DIR$/src/com/company/base/DFAState.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/base/exp/ExpressionNotValidException.java" />
+        <option value="$PROJECT_DIR$/src/com/company/base/testres/TestUtilities.java" />
+        <option value="$PROJECT_DIR$/test/com/company/integration/IntegrationsTest.java" />
+        <option value="$PROJECT_DIR$/src/com/company/parser/TopDownParser.java" />
+        <option value="$PROJECT_DIR$/src/com/company/parser/ITopDownParser.java" />
+        <option value="$PROJECT_DIR$/test/com/company/parser/TopDownParserTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="20" />
-    <option name="width" value="1440" />
-    <option name="height" value="825" />
+    <option name="x" value="-14" />
+    <option name="y" value="-22" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,75 +216,37 @@
               <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
               <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="dea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
               <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
               <item name="lexer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
               <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
               <item name="parser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="visitor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="visitor" type="462c0819:PsiDirectoryNode" />
-              <item name="second" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="dea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CompilerBau" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CompilerBau" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="integration" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -276,7 +256,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550255175861" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550266212459" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -308,16 +288,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DEACreatorTest.createTable">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+  <component name="RunManager" selected="JUnit.IntegrationsTest.IntegrationTest">
+    <configuration name="All in CompilerBau" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CompilerBau" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -354,6 +329,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IntegrationsTest.IntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CompilerBau" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.company.integration.IntegrationsTest" />
+      <option name="METHOD_NAME" value="IntegrationTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IntegrationsTest.IntegrationsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CompilerBau" />
       <extension name="coverage">
@@ -370,29 +361,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VisitorSecondTest.secondVisitorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CompilerBau" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.visitor.second.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.visitor.second" />
-      <option name="MAIN_CLASS_NAME" value="com.company.visitor.second.VisitorSecondTest" />
-      <option name="METHOD_NAME" value="secondVisitorTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IntegrationsTest.IntegrationTest" />
+        <item itemvalue="JUnit.All in CompilerBau" />
         <item itemvalue="JUnit.DEACreatorTest.createTable" />
         <item itemvalue="JUnit.IntegrationsTest.IntegrationsTest" />
         <item itemvalue="JUnit.DFABuilderTest.buildDEA" />
-        <item itemvalue="JUnit.VisitorSecondTest.secondVisitorTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -408,6 +383,7 @@
       <updated>1549872713074</updated>
       <workItem from="1550154499254" duration="12435000" />
       <workItem from="1550240164123" duration="8706000" />
+      <workItem from="1550264934412" duration="1265000" />
     </task>
     <task id="LOCAL-00001" summary="es funktioniert, aber keine Ahnung warum">
       <created>1549875518035</created>
@@ -511,21 +487,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 16h 03m 47s.xml">
-      <configuration name="DEACreatorTest.createTable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 16h 14m 11s.xml">
-      <configuration name="DEACreatorTest.createTable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 16h 23m 36s.xml">
-      <configuration name="DEACreatorTest.createTable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 16h 30m 02s.xml">
-      <configuration name="DEACreatorTest.createTable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 16h 36m 34s.xml">
-      <configuration name="DEACreatorTest.createTable" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 16h 37m 04s.xml">
       <configuration name="DEACreatorTest.createTable" configurationId="JUnit" />
     </history-entry>
@@ -541,15 +502,30 @@
     <history-entry file="DEACreatorTest_createTable - 2019.02.15 at 19h 20m 21s.xml">
       <configuration name="DEACreatorTest.createTable" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_CompilerBau - 2019.02.15 at 22h 21m 26s.xml">
+      <configuration name="All in CompilerBau" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_CompilerBau - 2019.02.15 at 22h 22m 14s.xml">
+      <configuration name="All in CompilerBau" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_CompilerBau - 2019.02.15 at 22h 22m 35s.xml">
+      <configuration name="All in CompilerBau" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_CompilerBau - 2019.02.15 at 22h 22m 53s.xml">
+      <configuration name="All in CompilerBau" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegrationsTest_IntegrationTest - 2019.02.15 at 22h 25m 33s.xml">
+      <configuration name="IntegrationsTest.IntegrationTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21141000" />
+    <option name="totallyTimeSpent" value="22406000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1295573" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16717096" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -558,7 +534,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32784638" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32647464" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32569557" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49934897" weight="0.33744857" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -609,110 +585,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/parser/TopDownParserDos.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/parser/ITopDownParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/company/visitor/first/VisitorFirstTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="54" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/visitor/first/VisitorFirst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/base/Visitable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/base/Visitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/base/OperandNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/base/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/parser/TopDownParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/base/exp/ExpressionNotValidException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/base/testres/TestUtilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1751">
-          <caret line="106" column="47" selection-start-line="106" selection-start-column="47" selection-end-line="106" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/base/BinOpNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/base/SyntaxNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/company/lexer/LexerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/lexer/Lexer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -735,13 +607,27 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/dea/DFAMap.java" />
-    <entry file="file://$PROJECT_DIR$/test/com/company/visitor/second/VisitorSecondTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/dea/DFABuilder.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/FollowposTableEntry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/company/dea/DFABuilderTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/dea/DEAGenerator.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/visitor/second/VisitorSecond.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2907">
+          <caret line="226" column="16" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -752,117 +638,185 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+    <entry file="file://$PROJECT_DIR$/src/com/company/dea/DEACreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="226" column="16" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/dea/DFABuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        <state relative-caret-position="232">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/base/FollowposTableEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/company/dea/DFABuilderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="86" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="20" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/visitor/second/VisitorSecond.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/visitor/second/FollowposTableEntry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#765#766#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/base/DFAState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/company/integration/IntegrationsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/dea/DEAGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="74" column="44" selection-start-line="74" selection-start-column="44" selection-end-line="74" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2986#2987#0" expanded="true" />
-            <element signature="e#3045#3046#0" expanded="true" />
-            <element signature="e#3085#3086#0" expanded="true" />
-            <element signature="e#3126#3127#0" expanded="true" />
-            <element signature="e#3161#3162#0" expanded="true" />
-            <element signature="e#3219#3220#0" expanded="true" />
-            <element signature="e#3267#3268#0" expanded="true" />
-            <element signature="e#3329#3330#0" expanded="true" />
-            <element signature="e#3368#3369#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/company/dea/DEACreatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        <state relative-caret-position="169">
+          <caret line="10" column="85" selection-start-line="10" selection-start-column="85" selection-end-line="10" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/dea/DEACreator.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/OperandNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="25" column="153" lean-forward="true" selection-start-line="25" selection-start-column="153" selection-end-line="25" selection-end-column="153" />
+        <state relative-caret-position="170">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/SyntaxNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding>
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/UnaryOpNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/Visitable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/Visitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/exp/ExpressionNotValidException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/testres/TestUtilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="135" column="5" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4188#4198#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/BinOpNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/base/DFAState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/company/visitor/second/VisitorSecondTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/visitor/first/VisitorFirst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3060">
+          <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/company/visitor/first/VisitorFirstTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/company/integration/IntegrationsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/parser/TopDownParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/parser/ITopDownParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/company/parser/TopDownParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/company/lexer/LexerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
         </state>
       </provider>
     </entry>
