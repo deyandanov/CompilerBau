@@ -1,8 +1,8 @@
 package com.company.base.exp;
 
-//Programmiert von 5965012
+//Programmiert von Fabian Pohlink
 
-public class ExpressionNotValidException extends Exception{
+public class ExpressionNotValidException extends Exception {
     public ExpressionNotValidException() {
         super("The expression is not a regular expression!");
     }

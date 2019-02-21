@@ -3,6 +3,8 @@ package com.company;
 import com.company.base.Visitable;
 import com.company.base.Visitor;
 import com.company.base.exp.ExpressionNotValidException;
+import com.company.dea.DEACreator;
+import com.company.lexer.Lexer;
 import com.company.parser.ITopDownParser;
 import com.company.parser.TopDownParser;
 import com.company.visitor.first.VisitorFirst;
@@ -16,11 +18,15 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //Main zum Testen, spiegelt lediglich den Integrationstest wieder
+
         ITopDownParser parser = new TopDownParser();
         Visitor visitorFirst = new VisitorFirst();
         Visitor visitorSecond = new VisitorSecond();
 
         Visitable tree = null;
+
+        String regEx = null;
 
         Scanner scanner = new Scanner(System.in);
 
@@ -30,7 +36,7 @@ public class Main {
 
             System.out.println("Geben Sie ihren regulären Ausdruck in der Form (r)# ein:");
 
-            String regEx = scanner.next();
+            regEx = scanner.next();
 
             try {
                 tree = parser.parse(regEx);
@@ -51,34 +57,10 @@ public class Main {
 
         SortedMap<Integer, FollowposTableEntry> followposTableEntries = ((VisitorSecond) visitorSecond).getFollowposTableEntries();
 
-        //TODO: Ausführen des DEA-Erzeugers und des Lexers
+        DEACreator deaCreator = new DEACreator();
 
+        Lexer lexer = new Lexer(deaCreator.createTable(followposTableEntries));
 
-
-        /*Visitable visitable = TestUtilities.createTestTree();
-        Visitor visitorFirst = new VisitorFirst();
-        visitorFirst.visit(visitable);
-        System.out.println(visitable.isNullable());
-        System.out.println(visitable.getFirstpos());
-        System.out.println(visitable.getLastpos());
-        System.out.println();
-        Visitor visitorSecond = new VisitorSecond();
-        visitorSecond.visit(visitable);
-
-
-
-        SortedMap<Integer, FollowposTableEntry> map = ((VisitorSecond) visitorSecond).getFollowposTableEntries();
-        for (int key : map.keySet()) {
-            System.out.println(map.get(key).getFollowpos());
-        }
-
-        TopDownParser topDownParser = new TopDownParser();
-
-        try {
-            Visitable testtree =  topDownParser.parse("(a+b)#");
-            System.out.println("E");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }*/
+        lexer.match(regEx);
     }
 }
