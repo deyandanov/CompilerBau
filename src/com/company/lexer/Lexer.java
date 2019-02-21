@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-public class Lexer {                                                                                    //Created by 2560035
+public class Lexer {                                                                                    //Created by Deyan Danov
 
     private SortedMap<DFAState, Map<Character, DFAState>> stateTransitionTable = new TreeMap<DFAState, Map<Character, DFAState>>();
     public Lexer(SortedMap<DFAState, Map<Character, DFAState>> stateTransitionTable){
@@ -20,14 +20,17 @@ public class Lexer {                                                            
         for (char symbol:charArray) {
             char letter = symbol;
 
-            if (state.isAcceptingState== true){
-                return true;
-            }
+
             if (stateTransitionTable.get(state).containsKey(letter)){
                 state = stateTransitionTable.get(state).get(letter);
             }
             else return false;
+
+
         }
-        return false;
+        if (state.isAcceptingState== true){
+            return true;
+        }
+        else return false;
     }
 }

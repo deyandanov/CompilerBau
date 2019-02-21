@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import java.util.*;
 
-public class LexerTest {                                                                                        //Created by 2560035
+public class LexerTest {                                                                                        //Created by Deyan Danov
 
     @Test
     public void match() {
@@ -37,8 +37,8 @@ public class LexerTest {                                                        
 
 
         Lexer lexer = new Lexer(stateTransitionTable);
-        Assert.assertTrue(lexer.match("ababbbaaa"));
-        Assert.assertFalse(lexer.match("abbaabb"));
+        Assert.assertTrue(lexer.match("aba"));
+        Assert.assertFalse(lexer.match("abab"));
 
     }
 }
