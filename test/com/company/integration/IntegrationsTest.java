@@ -38,7 +38,7 @@ public class IntegrationsTest {
         SortedMap<Integer, FollowposTableEntry> followposTableEntryMap = ((VisitorSecond) visitorSecond).getFollowposTableEntries();
         DEACreator deaCreator = new DEACreator();
 
-       Lexer lexer = new Lexer(deaCreator.createTable(followposTableEntryMap));
+       Lexer lexer = new Lexer(deaCreator.createDFAStateMap(followposTableEntryMap));
 
     }
 }

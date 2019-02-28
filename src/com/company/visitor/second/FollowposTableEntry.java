@@ -8,9 +8,9 @@ public class FollowposTableEntry {
     //Implementiert von Eric Gendner
 
 
-    private final int position;
-    private final String symbol;
-    private Set<Integer> followpos = new HashSet<>();
+    public final int position;
+    public final String symbol;
+    public Set<Integer> followpos = new HashSet<>();
 
     public FollowposTableEntry(int position, String symbol, Set<Integer> followpos) {
         this.position = position;
