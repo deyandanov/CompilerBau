@@ -39,12 +39,11 @@ public class TestUtilities {
         BinOpNode binOpNode_concat4 = new BinOpNode("°", binOpNode_concat3, operandNode_endtag);
 
 
-
         return binOpNode_concat4;
     }
 
 
-    public static Visitable createTestTreeFolllowPos(){
+    public static Visitable createTestTreeFolllowPos() {
         OperandNode operandNode_a1 = new OperandNode("a");
 
         OperandNode operandNode_a2 = new OperandNode("a");
@@ -71,7 +70,6 @@ public class TestUtilities {
         BinOpNode binOpNode_concat3 = new BinOpNode("°", binOpNode_concat2, operandNode_b3);
 
         BinOpNode binOpNode_concat4 = new BinOpNode("°", binOpNode_concat3, operandNode_endtag);
-
 
 
         //set firstpos and lastpos
@@ -133,10 +131,7 @@ public class TestUtilities {
         operandNode_endtag.setPosition(6);
 
 
-
         return binOpNode_concat4;
 
     }
-
-
 }

@@ -37,8 +37,8 @@ public class LexerTest {                                                        
 
 
         Lexer lexer = new Lexer(stateTransitionTable);
-        Assert.assertTrue(lexer.match("ababbbaaa"));
-        Assert.assertFalse(lexer.match("abbaabb"));
+        Assert.assertTrue(lexer.match("aba"));
+        Assert.assertFalse(lexer.match("abab"));
 
     }
 }

@@ -14,20 +14,23 @@ public class Lexer {                                                            
     }
     public boolean match(String string){
 
-        char[] charArray = string.toCharArray();
-        DFAState state = stateTransitionTable.firstKey();
+        char[] charArray = string.toCharArray();                      // transform string to char-array
+        DFAState state = stateTransitionTable.firstKey();             // setting DEAs state to its start state
 
-        for (char symbol:charArray) {
-            char letter = symbol;
+        for (char symbol:charArray) {                                 // iterating through the whole char-array
+            char letter = symbol;                                     // setting the letter to the current character from the char-array
 
-            if (state.isAcceptingState== true){
-                return true;
+            if (stateTransitionTable.get(state).containsKey(letter)){ // if next state exist, depending on state and letter
+                state = stateTransitionTable.get(state).get(letter); // state gets set to the reference of the next state
             }
-            if (stateTransitionTable.get(state).containsKey(letter)){
-                state = stateTransitionTable.get(state).get(letter);
-            }
-            else return false;
+            else return false;                                       // if no next state exist for the given state and letter
+                                                                     // the string does not match the DEA
+
+
         }
-        return false;
+        if (state.isAcceptingState == true){                          // if the final state is an accepting state
+            return true;                                              // the string matches the DEA
+        }
+        else return false;                                            //otherwise the string does not match the DEA
     }
 }
