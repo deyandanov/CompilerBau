@@ -11,7 +11,7 @@ public class DEACreator {                       //Lennart Schupp
     }
 
 
-    public SortedMap<DFAState, Map<Character, DFAState>> createDFAStateMap(SortedMap<Integer, FollowposTableEntry> followPosTableEntries){
+    public SortedMap<DFAState, Map<Character, DFAState>> createTable(SortedMap<Integer, FollowposTableEntry> followPosTableEntries){
 
             SortedMap<Integer, FollowposTableEntry> followPosTableEntries1 = followPosTableEntries;
             ArrayList<DFAState> states = new ArrayList<>();
@@ -34,14 +34,14 @@ public class DEACreator {                       //Lennart Schupp
                     }
                 }
                 else{
-                    firstpos=followPosTableEntries.get(i).position;
+                    firstpos=followPosTableEntries.get(i).getPosition();
                     arrayFirstpos=i;
                 }
                 if (exists) {
                 } else {
-                    alphabetArray.add(followPosTableEntries.get(i).symbol);
-                    if(firstpos>followPosTableEntries.get(i).position){
-                        firstpos=followPosTableEntries.get(i).position;
+                    alphabetArray.add(followPosTableEntries.get(i).getSymbol());
+                    if(firstpos>followPosTableEntries.get(i).getPosition()){
+                        firstpos=followPosTableEntries.get(i).getPosition();
                         arrayFirstpos=i;
                     }
                 }
@@ -56,8 +56,8 @@ public class DEACreator {                       //Lennart Schupp
 
         for (int i = 0; i < startList.size(); i++) {
             int thePos = startList.get(i);
-            followPos.addAll(followPosTableEntries.get(thePos).followpos);
-            if (followPosTableEntries.get(thePos).symbol.equals("#")) isAccepting = true;
+            followPos.addAll(followPosTableEntries.get(thePos).getFollowpos());
+            if (followPosTableEntries.get(thePos).getSymbol().equals("#")) isAccepting = true;
         }
 
             DFAState dfaState = new DFAState(id++, isAccepting, followPos);
@@ -79,10 +79,10 @@ public class DEACreator {                       //Lennart Schupp
                     Set<Integer> comparePos=new HashSet<>();
 
                     for (int pos : states.get(markedStatePos).positionsSet) {
-                        if(symbol.equals(followPosTableEntries.get(pos).symbol)){
+                        if(symbol.equals(followPosTableEntries.get(pos).getSymbol())){
                             list.add(pos);
-                            countList+=followPosTableEntries.get(pos).followpos.size();
-                            comparePos.addAll(followPosTableEntries.get(pos).followpos);
+                            countList+=followPosTableEntries.get(pos).getFollowpos().size();
+                            comparePos.addAll(followPosTableEntries.get(pos).getFollowpos());
                         }
                     }
 
@@ -105,8 +105,8 @@ public class DEACreator {                       //Lennart Schupp
 
                         while (i < list.size()) {
                             int thePos = list.get(i);
-                            followPos.addAll(followPosTableEntries.get(thePos).followpos);
-                            if (followPosTableEntries.get(thePos).symbol.equals("#")) isAccepting = true;
+                            followPos.addAll(followPosTableEntries.get(thePos).getFollowpos());
+                            if (followPosTableEntries.get(thePos).getSymbol().equals("#")) isAccepting = true;
                             i++;
                         }
 

@@ -21,7 +21,7 @@ public class DEACreatorTest {                                                   
 
         DEACreator builder = new DEACreator();
 
-        SortedMap<DFAState, Map<Character, DFAState>> stateTransitionTable = builder.createDFAStateMap(positionFollowPosMap);       //Builder ausführen
+        SortedMap<DFAState, Map<Character, DFAState>> stateTransitionTable = builder.createTable(positionFollowPosMap);       //Builder ausführen
 
 
 
